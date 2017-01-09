@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <EM_Multidealpro>
+            <version>1.0.0</version>
+        </EM_Multidealpro>
+    </modules>
+    <frontend>
+        <routers>
+            <multidealpro>
+                <use>standard</use>
+                <args>
+                    <module>EM_Multidealpro</module>
+                    <frontName>multidealpro</frontName>
+                </args>
+            </multidealpro>
+        </routers>
+        <layout>
+            <updates>
+                <multidealpro>
+                    <file>em_multidealpro.xml</file>
+                </multidealpro>
+            </updates>
+        </layout>
+		<events>
+			<controller_action_layout_generate_xml_before>
+                <observers>
+                    <em_multidealpro_change_layout>
+                        <type>singleton</type>
+                        <class>EM_Multidealpro_Model_Observer</class>
+                        <method>changeLayoutEvent</method>
+                    </em_multidealpro_change_layout>
+                </observers>
+            </controller_action_layout_generate_xml_before>
+			<sales_order_save_after>
+                <observers>
+                    <em_mutidealpro_custom_after_sale>
+						<type>singleton</type>
+                        <class>EM_Multidealpro_Model_Observer</class>
+                        <method>handleCustomerFirstOrder</method>
+                    </em_mutidealpro_custom_after_sale>
+                </observers>
+            </sales_order_save_after>
+		</events>
+    </frontend>
+    <admin>
+		<routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <multidealpro before="Mage_Adminhtml">EM_Multidealpro_Adminhtml</multidealpro>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+		<translate>
+            <modules>
+                <EM_Multidealpro>
+                    <files>
+                        <default>EM_Multidealpro.csv</default>
+                    </files>
+                </EM_Multidealpro>
+            </modules>
+        </translate>
+		<menu>
+			<emthemes translate="title">
+				<title>EMThemes</title>
+				<sort_order>72</sort_order>
+				<children>
+					<multidealpro module="multidealpro">
+						<title>EM Group Deals</title>
+						<sort_order>150</sort_order>
+						<children>
+							<new module="multidealpro">
+								<title>New Deal</title>
+								<sort_order>0</sort_order>
+								<action>adminhtml/multidealpro/new</action>
+							</new>
+							<manage module="multidealpro">
+								<title>Deals Manage</title>
+								<sort_order>1</sort_order>
+								<action>adminhtml/multidealpro/index</action>
+							</manage>
+							<setting module="multidealpro">
+								<title>Settings</title>
+								<sort_order>2</sort_order>
+								<action>adminhtml/system_config/edit/section/multidealpro/</action>
+							</setting>
+						</children>
+					</multidealpro>
+				</children>
+			</emthemes>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<multidealpro translate="title" module="multidealpro">
+											<title>EM Multidealpro settings</title>
+											<sort_order>0</sort_order>
+										</multidealpro>
+									</children>
+								</config>
+							</children>
+						</system>
+						<emthemes>
+							<title>EM Themes Menu</title>
+							<sort_order>72</sort_order>
+							<children>
+								<multidealpro>
+									<title>EM Group Deals</title>
+									<sort_order>150</sort_order>
+									<children>
+										<manage translate="title" module="multidealpro">
+											<title>EM Multidealpro Manage</title>
+											<sort_order>1</sort_order>
+											<children>
+												<save translate="title">
+													<title>Save Deals</title>
+													<sort_order>0</sort_order>
+												</save>
+												<delete translate="title">
+													<title>Delete Post</title>
+													<sort_order>10</sort_order>
+												</delete>
+											</children>
+										</manage>
+										
+									</children>
+								</multidealpro>
+							</children>
+						</emthemes>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<multidealpro>
+					<file>em_multidealpro.xml</file>
+				</multidealpro>
+			</updates>
+		</layout>
+		<events>
+			<adminhtml_catalog_product_edit_prepare_form>
+                <observers>
+                    <em_multidealpro_change_datetime>
+                        <type>singleton</type>
+                        <class>EM_Multidealpro_Model_Datetime</class>
+                        <method>changeDatetimeEvent</method>
+                    </em_multidealpro_change_datetime>
+                </observers>
+            </adminhtml_catalog_product_edit_prepare_form>
+		</events>
+    </adminhtml>
+    <global>
+        <models>
+            <multidealpro>
+                <class>EM_Multidealpro_Model</class>
+				<resourceModel>multidealpro_resource</resourceModel>
+            </multidealpro>
+            <multidealpro_resource>
+                <class>EM_Multidealpro_Model_Resource</class>
+                <entities>
+                    <deal>
+                        <table>em_multideal</table>
+                    </deal>
+					<deal_store>
+                        <table>em_multideal_store</table>
+                    </deal_store>
+                </entities>
+            </multidealpro_resource>
+        </models>
+        <resources>
+            <multidealpro_setup>
+                <setup>
+                    <module>EM_Multidealpro</module>
+                </setup>
+            </multidealpro_setup>
+        </resources>
+        <blocks>
+            <multidealpro>
+                <class>EM_Multidealpro_Block</class>
+            </multidealpro>
+        </blocks>
+        <helpers>
+            <multidealpro>
+                <class>EM_Multidealpro_Helper</class>
+            </multidealpro>
+        </helpers>
+    </global>
+	<crontab>
+        <jobs>
+            <EM_Multidealpro>
+                <schedule><cron_expr>*/5 * * * *</cron_expr></schedule>
+                <run><model>multidealpro/multidealpro::refeshData</model></run>
+            </EM_Multidealpro>
+        </jobs>
+    </crontab>
+	<default>
+		<multidealpro>
+			<general>
+				<enable_multideal>1</enable_multideal>
+				<display_header>0</display_header>
+				<use_home>0</use_home>
+				<no_deal><![CDATA[There are no deals  currently setup. Please try again later.]]></no_deal>
+				<!--notify_admin>1</notify_admin>
+				<email_admin><![CDATA[admin@email.com]]></email_admin-->
+			</general>
+			<sidebar>
+				<list>recent_deal</list>
+				<block_data>
+					<recent_deal>
+						<type>multidealpro/recent</type>
+						<name>em_deal_sidebar</name>
+						<template>em_multidealpro/sitebar/recent.phtml</template>
+					</recent_deal>
+				</block_data>
+			</sidebar>
+			<recent_deal>
+				<enable_recent>0</enable_recent>
+				<block_reference>right</block_reference>
+				<position><![CDATA[before="-"]]></position>
+				<limit>1</limit>
+				<title><![CDATA[Today's Deal]]></title>
+				<thumbnail_width>70</thumbnail_width>
+				<thumbnail_height>70</thumbnail_height>
+				<show_thumbnail>1</show_thumbnail>
+				<show_name>1</show_name>
+				<show_sku>0</show_sku>
+				<show_review>0</show_review>
+				<show_description>0</show_description>
+				<show_price>1</show_price>
+				<show_btncart>1</show_btncart>
+				<show_addto>1</show_addto>
+				<show_label>1</show_label>
+			</recent_deal>
+			<main_deal>
+				<type_deal>0,1,2</type_deal>
+				<layout>two_columns_left</layout>
+				<column_count></column_count>
+				<row_count></row_count>
+				<thumbnail_width>200</thumbnail_width>
+				<thumbnail_height>200</thumbnail_height>
+				<show_thumbnail>1</show_thumbnail>
+				<show_name>1</show_name>
+				<show_sku>0</show_sku>
+				<show_review>0</show_review>
+				<show_description>0</show_description>
+				<show_price>1</show_price>
+				<show_btncart>1</show_btncart>
+				<show_addto>1</show_addto>
+				<show_label>1</show_label>
+			</main_deal>
+		</multidealpro>
+	</default>
+</config>

@@ -1,0 +1,147 @@
+/**/
+.multidealpro_products a             { color:#1e7ec8; text-decoration:none;  }
+.multidealpro_products a:hover       { text-decoration:underline;}
+.multidealpro_products button.button.btn-cart span { display:block; height:34px; border:none; background:url(../images/btn-cart.png) 0 0 no-repeat; padding:0; font:bold 14px/34px Arial, Helvetica, sans-serif; text-align:center; white-space:nowrap; color:#fff; padding-left:10px }
+.multidealpro_products button.button.btn-cart span span { border:0; padding:0 20px 0 10px; background:url(../images/btn-cart.png) right bottom no-repeat; height:34px; line-height:34px}
+
+
+/* Pager */
+.multidealpro_products .pager { font-size:10px; color:#737372; background:none; border:none }
+.multidealpro_products .pager .amount { float:right; margin:0; font-size:13px; font-weight:bold}
+.multidealpro_products .pager .pages li { display:inline; margin:0 2px; font-size:10px; text-transform:uppercase; font-weight:bold}
+.multidealpro_products .pager .pages { margin:0; position:absolute; right:20px; top:12px}
+.multidealpro_products .pager .pages strong{ display:none}
+
+.multidealpro_products .pager .pages ol { display:inline; }
+.multidealpro_products .pager .pages li { display:inline; margin:0 2px; font-size:10px; text-transform:uppercase; font-weight:bold}
+.multidealpro_products .pager .pages li a{ color:#737372; text-decoration:none }
+.multidealpro_products .pager .pages li a:hover{ text-decoration:underline }
+/* Sorter */
+.multidealpro_products .sorter { background:#fff url(../images/bkg_toolbar.png) 0 1px repeat-x; padding:11px 20px 10px; border-top:1px solid #e2e2e2; font-size: 10px;
+color: #737372;
+text-transform: uppercase;}
+/*View mode*/
+.multidealpro_products .view-mode label {float: left; font-weight:bold}
+.multidealpro_products .view-mode strong.grid ,
+.multidealpro_products .view-mode .grid:hover {   background-position:0px 0px;}
+.multidealpro_products .view-mode .grid, 
+.multidealpro_products .view-mode .list {  display:inline-block; margin-top:0; text-indent: -9999px; width: 15px; float: left; margin-right:0px;  background: url("../images/icon-view.png") no-repeat scroll 0 0 transparent;-moz-transition: all 400ms ease; -webkit-transition: all 400ms ease; -o-transition: all 400ms ease; transition: all 400ms ease; height:15px; margin-left:10px }
+.multidealpro_products .view-mode a.list { background-position:-22px -21px;  overflow: hidden;}
+.multidealpro_products .view-mode a.grid { background-position:0 -21px}
+.multidealpro_products .view-mode strong.list,
+.multidealpro_products .view-mode .list:hover{ background-position:-22px 0px}
+
+
+
+/* Toolbar */
+.multidealpro_products{clear:both;margin:20px 0 0;float:left;width:100%;}
+.multidealpro_products .toolbar { position:relative;}
+
+.multidealpro_products .toolbar .pager { padding:0; margin-top:16px}
+.multidealpro_products .toolbar .sorter { border:1px solid #c4c1bc; margin-bottom:2px}
+
+/* Add to Links */
+.multidealpro_products .add-to-links { font-size:11px; margin:0; float:left; width:100%}
+.multidealpro_products .add-to-links .separator { margin:0 1px 0 2px; color:#2a6eac; display:inline}
+.multidealpro_products .add-to-links li{font-size:10px; text-transform:uppercase; float:left}
+.multidealpro_products .link-cart { color:#dc6809 !important; font-weight:bold; }
+.multidealpro_products .link-wishlist { color:#2a6eac !important; font-weight:bold; }
+.multidealpro_products .link-reorder { font-weight:bold; color:#dc6809 !important; }
+.multidealpro_products .link-compare { font-weight:bold; color:#2a6eac }
+
+/* Old price */
+.multidealpro_products .old-price { margin:0; }
+
+.multidealpro_products .old-price .price-label { white-space:nowrap; color:#5c5c5c; font-size:10px; font-weight:bold; text-transform:uppercase}
+.sidebar .multidealpro_products .old-price .price-label{ display:none}
+.sidebar .multidealpro_products .old-price { float:left; margin-right:10px}
+.multidealpro_products .old-price .price { font-weight:bold; color:#5c5c5c; text-decoration:line-through; font-size:14px}
+
+/* Special price */
+.multidealpro_products .special-price { margin:0; padding:0; }
+.multidealpro_products .special-price .price-label { font-size:10px; font-weight:bold; white-space:nowrap; color:#ea3903; font-size:10px; font-weight:bold; text-transform:uppercase}
+.sidebar .multidealpro_products .special-price .price-label{ display:none}
+.multidealpro_products .special-price .price { font-size:14px; font-weight:bold; color:#ea3903; } 
+.multidealpro_products .products-grid{ background:none}
+.multidealpro_products .products-grid .product-name { /*min-height:2.7em;*/ margin:0 0 2px; font-size:14px; color:#000000; }
+.multidealpro_products .products-grid .sku{ color:#5c5c5c; margin-bottom:4px}
+.multidealpro_products .products-grid .product-name a { color:#000000; font-size:14px }
+.multidealpro_products .products-grid .price-box { margin:4px 0 10px; } 
+
+
+
+
+.show_clock{ margin-bottom:12px}
+.multidealpro_products .products-grid{padding-top:0px }
+
+.multidealpro_products .products-grid.last{ margin-bottom:50px}
+.multidealpro_products .products-grid li.item { width:190px; border-left:1px solid #cccccc; padding:20px 22px 30px; min-height:420px}
+.multidealpro_products .products-grid.first{margin-top:40px; padding-top:0}
+.multidealpro_products .products-grid li.item:first-child {border-left:none; padding-left:0; }
+.col2-left-layout .multidealpro_products .products-grid, 
+.col2-right-layout .multidealpro_products .products-grid {width:685px}
+.multidealpro_products .products-list .price-box{ width:100%}
+.multidealpro_products .products-list li.item,
+.multidealpro_products .products-grid li.item{position:relative}
+.multidealpro_products .products-list li.item .sale_off{ right:auto; left:10px}
+.multidealpro_products .sale_off{ border-radius:50%;
+-webkit-border-radius: 50%;
+-moz-border-radius:50%; background:#1992ed; color:#fff; font-size:14px; text-transform:uppercase; width:40px; height:40px; font-weight:bold; position:absolute; top:10px; right:30px; padding:9px; text-align:center;}
+.multidealpro_products .sale_off span{ display:block; font-size:18px; margin-top:-8px}
+.multidealpro_products .sale_off.queued{ background:#69bf02; font-size:10px; line-height:22px}
+.multidealpro_products .sale_off.queued span{ font-size:14px; color:#f0f0f0;}
+.multidealpro_products .products-list .deal_qty{ text-align:left}
+.multidealpro_products .deal_qty{ border-top:1px solid #cccccb; padding-top:11px; margin-top:10px; color: #5c5c5c; font-weight: bold; text-align:center; padding-bottom:3px; overflow:hidden; clear:both}
+.multidealpro_products .deal_qty .qty_left.soldin{ text-align:left; float:left; width:100%}
+
+.multidealpro_products .msg_soldout{ color:#fb040a; font-size:36px; margint-top:10px; padding-top:2px; border-top:1px solid #cccccb; }
+
+/*Block Deal*/
+.show_details .title,
+.deal_title{ text-align:center; min-height:44px; line-height:44px; display:block; background:#3f5b71; padding-top:1px; #6d8598; border-radius:3px;
+-webkit-border-radius: 3px;
+-moz-border-radius:3px}
+.show_details .title span,
+.deal_title span{ background: #3d586e; /* Old browsers */
+background: -moz-linear-gradient(top, #3d586e 0%, #2d485d 50%, #1d3a51 52%, #0c283f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d586e), color-stop(50%,#2d485d), color-stop(52%,#1d3a51), color-stop(100%,#0c283f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #3d586e 0%,#2d485d 50%,#1d3a51 52%,#0c283f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #3d586e 0%,#2d485d 50%,#1d3a51 52%,#0c283f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #3d586e 0%,#2d485d 50%,#1d3a51 52%,#0c283f 100%); /* IE10+ */
+background: linear-gradient(to bottom, #3d586e 0%,#2d485d 50%,#1d3a51 52%,#0c283f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d586e', endColorstr='#0c283f',GradientType=0 ); /* IE6-9 */
+ color:#ffffff; padding:0 20px; min-height:42px; line-height:42px; display:block; font-size:20px; border-top:1px solid #6d8598; border-radius:3px;
+-webkit-border-radius: 3px;
+-moz-border-radius:3px}
+.multidealpro_recent{ margin-bottom:15px;float:left;width:100%;}
+.multidealpro_recent .multidealpro_products{margin:0;
+-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.show_details .show_clock,
+.multidealpro_recent .multidealpro_products{ padding:20px 20px 23px; background:#ffffff; border-radius:0 0 3px 3px;
+-webkit-border-radius: 0 0 3px 3px;
+-moz-border-radius:0 0 3px 3px; border:1px solid #b1afac; border-top:none}
+.show_details .show_clock{padding:15px 30px;margin:0;}
+.multidealpro_recent .multidealpro_products .products-grid { width:auto; min-height:0; margin:0 !important}
+.multidealpro_recent .multidealpro_products .products-grid li.item{ width:auto; min-height:0; padding:25px 0 0; border:none}
+.multidealpro_recent .multidealpro_products .products-grid li.item:first-child{ padding:0;}
+.sidebar .multidealpro_products .products-grid .product-image{ margin-right:0; width:auto; height:auto; text-align:center}
+.sidebar .multidealpro_products .sale_off{ right:0; top:0}
+
+.product-view .show_details .price-box{ margin-top:0}
+.clockoff {float:left; background:#333; margin-bottom:10px; padding:0px 10px 1px; border-radius:3px;
+-webkit-border-radius: 3px;
+-moz-border-radius:3px; margin-top:5px; margin-bottom:16px}
+.clockoff > div span{ font-size:18px}
+.clockoff > div{ float:left; font-size:14px; margin-right:5px; font-weight:bold; color:#fff;}
+.clockoff > div.title{ text-transform:uppercase; font-size:16px; margin-top:3px}
+
+/*Clock*/
+.clock_style_1{overflow:hidden;margin:8px 0 7px;}
+.clock_style_1 .clock li{float:left;text-align:center;margin:0 5px 5px 0;}
+.clock_style_1 .clock > li{margin:0 0 5px 0;}
+.clock_style_1 .clock > li:first-child{margin:0 5px 5px 0;}
+.clock_style_1 .clock li span{color:#fff;background:#333;padding:6px;font-size:24px;line-height:1;display:inline-block;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;
+box-shadow:0 2px 2px 0 #979797;-moz-box-shadow:0 2px 2px 0 #979797;-webkit-box-shadow:0 2px 2px 0 #979797;}
+.clock_style_1 .clock li p{text-transform:uppercase;font-size:8px;margin:4px 0 0;}
+.show_details .clock_style_1 .clock li span{font-size:44px;}
+.show_details .clock_style_1 .clock li{margin-bottom:0;}

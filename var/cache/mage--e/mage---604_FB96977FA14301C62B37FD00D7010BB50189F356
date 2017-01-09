@@ -1,0 +1,108 @@
+
+    <div class="widget widget-static-block ">
+    	    	<div class="newsletter_footer">
+<div class="newsletter_info">
+<div class="newsletter-content">
+<h5 class="newsletter-title">Đăng kí nhận tin khuyến mãi</h5>
+<div class="block block-subscribe">
+    <div class="block-title">
+        <strong><span>Bản tin mới</span></strong>
+    </div>
+    <form action="http://localhost/galatitanshop-full-package/index.php/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+        <div class="block-content">
+            <div class="form-subscribe-header">
+                <label for="newsletter">Đăng ký để nhận tin từ chúng tôi:</label>
+            </div>
+			<div class="form-subscribe-content">
+				<div class="input-box">
+				   <input type="text" name="email" id="newsletter" title="Đăng ký để nhận tin từ chúng tôi" class="input-text required-entry validate-email" />
+				</div>
+				<div class="actions">
+					<button type="submit" title="Tới" class="button"><span><span>Tới</span></span></button>
+				</div>
+			</div>
+        </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var searchForm = new Varien.searchForm('newsletter-validate-detail', 'newsletter', 'Sign up for your email ...'); 
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+</div>
+</div>
+</div>
+<div class="clear">&nbsp;</div>
+<div id="footer-information" class="box link_text">
+<div class="first link_content">
+<div class="inner_links">
+<p class="h5">K Channel</p>
+<div class="content_links"></div>
+</div>
+</div>
+<div class="link_content">
+<div class="inner_links">
+<p class="h5">Khách hàng</p>
+<div class="content_links">
+<ul class="list-unstyled">
+<li><a href="http://localhost/galatitanshop-full-package/index.php/checkout/cart/">Xem giỏ hàng</a></li>
+<li><a href="http://localhost/galatitanshop-full-package/index.php/customer/account/">Tài khoản của tôi</a></li>
+<li><a href="http://localhost/galatitanshop-full-package/index.php/sales/order/history/">Tình trạng đơn hàng</a></li>
+<li><a href="#">Chương trình khuyến mãi</a></li>
+<li><a href="#">Giấy chứng nhận</a></li>
+<li><a href="#">Bảo hành</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="link_content">
+<div class="inner_links">
+<p class="h5">Thông tin liên lạc</p>
+<div class="content_links">
+<ul class="list-unstyled">
+<li>Hotline: 1900.6480</li>
+<li>Di động: 098.8888.465</li>
+<li>Phản ánh dịch vụ: 096.6688.045</li>
+<li>Hỗ trợ kỹ thuật: 086.290.3600</li>
+<li>Phản ánh dịch vụ: 096.6688.045</li>
+<li>Email góp ý: cskh@duykhuong.com</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="link_content">
+<div class="inner_links">
+<p class="h5">Hệ Thống cửa hàng</p>
+<div class="content_links">
+<ul class="list-unstyled">
+<li>672 Âu Cơ, Tân Bình, HCM</li>
+<li>5 Nguyễn Kiệm, Gò Vấp, HCM</li>
+<li>171 Khánh Hội, Q4, HCM</li>
+<li>4B Cộng Hoà, Tân Bình, HCM</li>
+<li>45 Trần Quang Khải, Q1, HCM</li>
+<li>669 Lê Hồng Phong, Q10, HCM</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="omega link_content">
+<div class="inner_links">
+<p class="h5">Trụ sở</p>
+<div class="content_links">
+<p class="link_address"><span class="icon address">1</span>99 Nguyễn Huệ, phường Bến Nghé, TPHCM</p>
+<p class="link_address"><span class="icon email">2</span>kchannelshop@gmail.com</p>
+<p class="link_address"><span class="icon fone">3</span>(84) 902806221</p>
+<ul class="list-inline link_connect">
+<li><a class="show icon facebook" title="" href="https://www.facebook.com/khuong.phamvuduy" data-toggle="tooltip" data-placement="bottom" data-original-title="Facebook"><span>Facebook</span></a></li>
+<li><a class="show icon pinterest" href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="Pinterest"><span>Pinterest</span></a></li>
+<li><a class="show icon twitter" href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="Twitter"><span>Twitter</span></a></li>
+<li><a class="show icon google" href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="Google"><span>Google</span></a></li>
+<li><a class="show icon rss" href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="Rss"><span>Rss</span></a></li>
+<li><a class="show icon vimeo" href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="Vimeo"><span>Vimeo</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>    </div>
+

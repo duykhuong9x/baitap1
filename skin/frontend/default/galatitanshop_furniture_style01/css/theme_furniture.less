@@ -1,0 +1,22 @@
+.em_col_main .special_slider .products-grid li.item .price{ .changeFont(@h1_font); font-size:190%}
+.em_col_main .special_slider .products-grid li.item .product-name{ .changeFont(@h1_font); font-size:190%}
+.em_col_main .special_slider .products-grid li.item .product-name a{ font-size:100%}
+.em_col_main .special_slider .products-grid li.item button.button.btn-cart:before{ 
+	.changeIcon(30px, ~'5px -433px'); 
+	.changeAllColor(@btn1_text_color; @btn1_line_color; @btn1_bg_color; @btn1_font);
+	border-bottom-color: darken(@btn1_line_color, 15%);
+	&:hover
+	{	
+		.changeIcon(30px, ~'5px -463px');
+		.changeAllColor(@btn1_bg_color; @btn1_line_color; @btn1_text_color; @btn1_font);
+	}
+}
+.em_col_main .special_slider .products-grid li.item button.button.btn-cart{
+	.changeAllColor(@btn1_text_color; lighten(@btn1_line_color, 10%); lighten(@btn1_bg_color, 10%); @btn1_font);
+	border-bottom-color: darken(lighten(@btn1_line_color, 10%), 15%);
+	width:auto !important; height:auto !important; 
+	&:hover
+	{	
+		.changeAllColor(@btn1_bg_color; @btn1_line_color; @btn1_text_color; @btn1_font);
+	}
+}

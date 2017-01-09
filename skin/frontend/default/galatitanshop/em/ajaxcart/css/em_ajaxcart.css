@@ -1,0 +1,17 @@
+#bg_fade {background-color:#000;left:0px;margin:0px;padding:0px;position:fixed;top:0px;visibility:hidden;width:100%;z-index:998;height:1000px}
+#containerDiv {min-width: 350px;max-width:500px;z-index: 999;display:none;position:fixed;}
+#containerDiv .ajaxcart {position: relative;padding: 20px;text-align: center;border: 10px solid #EAE9E6;background-color: white;z-index: 99999; max-height:660px}
+#containerDiv .ajaxcart .row2 {clear:left; padding-bottom:0px; overflow:hidden}
+#containerDiv .ajaxcart #ajax_image img {float:left;margin-right:7px;}
+#containerDiv .ajaxcart #ajax_image  { margin-bottom: 10px;overflow: hidden;text-align: left;}
+#containerDiv .ajaxcart #ajax_image span {text-align:left;}
+
+
+#containerDiv .ajaxcart .row2 a span { border: 0 none;padding: 0;}
+.product-essential {position:relative;}
+.ajaxcart .product-options{ max-height:250px; /*overflow-y:scroll*/ overflow:auto;}
+.ajaxcart .product_title{ text-transform:uppercase; text-align:center}
+
+#containerDiv .ajaxcart .row2 .back{ float:left}
+#containerDiv .ajaxcart .row2 .next{ float:right}
+#containerDiv .ajaxcart .row2 a span{ float:left; display:inline-block}

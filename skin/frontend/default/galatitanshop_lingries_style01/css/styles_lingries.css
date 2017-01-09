@@ -1,0 +1,70 @@
+.icon { background:url(../images/icons.png) no-repeat; }
+.inner_links .list-unstyled a:before,
+.inner_links .list-unstyled li a:hover:before,
+.header-container .toolbar-switch:hover .toolbar-dropdown,
+.block-subscribe button.button span span,
+.block-subscribe button.button:hover span span,
+.view-mode .grid, .view-mode .list,
+.link-wishlist, .add-to-links li a,
+.block-wishlist .link-cart,
+button.button.btn-cart,
+.product-view-detail button.button.btn-cart-detail:before,
+.csslider a.next,
+.csslider a.prev,
+.pager .pages li a.previous, 
+.pager .pages li a.next {
+background-image:url(../images/icons.png)
+}
+.em_blog-cat li.parent.current li.current > a, 
+.em_blog-cat li.parent ul li a:hover, 
+.block-account .block-content li a:hover, 
+.block-account .block-content li.current strong{ background-image:url(../images/list-style1.png)}
+.tp-bullets.simplebullets.round .bullet{ background-image:url(../images/bullet.png)!important}
+
+
+
+/*layout*/
+.inner_menu_slideshow .container{ padding:0}
+.box_banner {padding: 34px 0 15px;}
+.cms-index-index .wrapper_main .main_container{ padding-top:20px}
+.cms-index-index .em_col_main .ui-slider-tabs .products-grid li.item{ width:262px}
+.cms-index-index .wrapper_main .block.block-banner{ margin-top:0px; margin-bottom:40px}
+.cms-index-index .wrapper_main .em_area13 .block.block-banner{ margin-top:20px; margin-bottom:0px}
+.wrapper_main .inner_main > .row > .em_area03{ margin-bottom:20px}
+
+.em_col_main .slider_container.col-sm-12.first{ margin-left:-10px; padding-right:0;}
+.em_col_main .col-sm-12.omega{ margin-right:-10px; float:right; margin-top:21px}
+.em_col_main .products-grid li.item .big-img img{ width:auto}
+.em_col_main .products-grid li.item .big-img > .product-image{ float:left; margin-right:20px}
+.em_col_main .products-grid li.item .big-img .block-related{ float:left; margin-right:0}
+.em_col_main .products-grid li.item .big-img .block-related .product-image-custom{ margin-bottom:17px}
+.em_col_main .special_slider .products-grid li.item{ margin-right:0px; background:none}
+.em_col_main .special_slider .products-grid li.item:hover{ box-shadow: none;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;}
+.em_col_main .products-grid li.item .big-img .block-related li{ float:left; width:31%; margin-right:2%}
+.em_col_main .products-grid li.item .big-img > .product-image img{ width:100%; height:auto}
+.em_col_main .products-grid li.item .big-img .block-related li img{ width:100%; height:auto}
+.em_col_main .special_slider .products-grid li.item .product-shop{ padding:0 0 10px}
+.em_col_main .special_slider .products-grid li.item .product-name{ margin-bottom:18px}
+.em_col_main .special_slider .products-grid .product-shop .price-box{ margin-bottom:8px}
+
+.em_col_main .special_slider .products-grid li.item button.button.btn-cart{ position:relative; background-position:right bottom !important; border-bottom-width:3px}
+.em_col_main .special_slider .products-grid li.item button.button.btn-cart span{ text-indent: 0;text-transform: uppercase;font-weight: bold;}
+.em_col_main .special_slider .products-grid li.item button.button.btn-cart span span{ text-indent: 0; padding: 4px 20px 3px 50px; text-transform: uppercase;font-weight: bold; min-height:26px}
+.em_col_main .special_slider .products-grid li.item button.button.btn-cart:before{ width:30px !important; height:30px !important; background:url(../images/icons.png) 4px -433px no-repeat; content:""; position:absolute; top:-1px; left:-1px; border:1px solid; border-bottom-width:3px; border-right-width:0}
+
+
+.ui-slider-tabs-content-container{ margin-bottom:20px}
+.ui-slider-tabs-list-container{border-bottom:5px solid; text-align:center}
+.ui-slider-tabs-list{ display:inline-block}
+.ui-slider-tabs-list li{ height:39px !important}
+.ui-slider-tabs-list li a{ border-bottom:none; height:39px !important}
+.ui-slider-tabs-content-container > div{ padding:30px 20px 20px}
+
+.wrapper_main.wrapper_main_end{ border-top:1px solid; border-bottom:1px solid}
+
+
+@media (min-width: 1200px) {
+	.cms-index-index .menuleft #menu-default{ width:280px}
+}

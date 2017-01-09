@@ -1,0 +1,86 @@
+/*pager*/
+.multidealpro_products .sorter{ float:left}
+.multidealpro_products .pager{ float:right; margin:0}
+.multidealpro_products .toolbar .pager .amount{ display:inline-block}
+.multidealpro_products .toolbar-bottom .toolbar{ padding-top:10px}
+
+.show_clock{ margin-bottom:12px; clear:both}
+.multidealpro_products .products-grid{padding-top:0px; }
+.em_col_content .multidealpro_products .products-grid{margin-right:-20px }
+
+.multidealpro_products .products-grid.last{ /*margin-bottom:50px*/}
+.multidealpro_products .products-grid li.item { /*width:190px; border-left:1px solid #cccccc; padding:20px 22px 30px; min-height:420px height:510px;*/ margin-bottom:30px}
+.multidealpro_products .products-grid.first{margin-top:40px; padding-top:0}
+.multidealpro_products .products-grid li.item:first-child {border-left:none; padding-left:0; }
+.multidealpro_products .products-grid li.item.last{ margin-right:0}
+.block-multideal .products-grid .product-shop .price-box{ margin-bottom:7px}
+.block-multideal{ padding-bottom:10px}
+.block-multideal .note-msg{ margin:10px 10px 0}
+/*.col2-left-layout .products-grid, .col2-right-layout .products-grid {width:685px}*/
+.products-list .price-box{ width:100%}
+.products-list li.item,
+.products-grid li.item{position:relative}
+.products-list li.item .sale_off{ right:auto; left:10px}
+.sale_off{ /*border-radius:50%;
+-webkit-border-radius: 50%;
+-moz-border-radius:50%; background:#1992ed; color:#fff; font-size:14px; text-transform:uppercase; width:40px; height:40px; font-weight:bold; */position:absolute; top:10px; left:10px; padding:9px; text-align:center; min-width:55px; background:url(../images/sale-off.png) center 0 no-repeat; min-width:79px; min-height:46px; text-transform:lowercase; }
+.sale_off span{ /*display:block; font-size:18px; margin-top:-8px*/}
+.sale_off.queued{ /*background:#69bf02; font-size:10px; line-height:22px*/ background:url(../images/comming-soon.png) 0 0 no-repeat; padding:3px}
+.sale_off.queued span{ /*font-size:14px; color:#f0f0f0;*/ display:block}
+.products-list .deal_qty{ text-align:left; margin-top:0}
+.deal_qty{ border-top:1px solid #cccccb; padding-top:11px; margin-top:10px; color: #5c5c5c; font-weight: bold; text-align:center; padding-bottom:10px; overflow:hidden; clear:both; float:left; width:100%}
+.deal_qty .qty_left.soldin{ text-align:left; float:left; width:100%}
+
+.msg_soldout{ color:#fb040a; font-size:36px; margin-bottom:7px; padding-top:7px; border-top:1px solid #cccccb; clear:both}
+
+/*Block Deal*/
+.show_details{ clear:both}
+.show_details .title,
+.deal_title{ /*text-align:center; min-height:44px; line-height:44px; display:block; background:#3f5b71; padding-top:1px; #6d8598; border-radius:3px;
+-webkit-border-radius: 3px;
+-moz-border-radius:3px*/ border-bottom-width:5px !important; border-bottom-style: solid}
+.show_details .title span,
+.deal_title span{ display:block}
+.multidealpro_recent{ margin-bottom:20px;float:none;width:100%;}
+.multidealpro_recent .multidealpro_products{margin:0;
+-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.multidealpro_recent .products-grid li.item .actions{ width:100%}
+.multidealpro_recent .products-grid li.item .actions > p{ margin:0}
+.show_details .show_clock{ padding:20px 20px 23px; border-width:1px !important; border-style: solid; border-top:none}
+.multidealpro_recent .multidealpro_products{ padding:20px 0px 5px}
+.show_details .show_clock{padding:15px 30px;margin:0;}
+.multidealpro_recent .multidealpro_products .products-grid { width:auto; min-height:0; margin:0 !important;}
+.multidealpro_recent .multidealpro_products .products-grid li.item{ width:auto; min-height:0; padding:15px 20px; border:none; border-top:1px dashed; margin-bottom:0}
+.multidealpro_recent .multidealpro_products .products-grid li.item:first-child{ border:none; padding-top:0}
+.sidebar .products-grid .product-image{ margin-right:0; width:auto; height:auto; text-align:center}
+.sidebar .sale_off{ /*right:0; top:0; left:auto*/}
+
+.product-view .show_details .price-box{ margin-top:0}
+.clockoff {float:left; background:#333; margin-bottom:10px; padding:0px 10px 1px; border-radius:3px;
+-webkit-border-radius: 3px;
+-moz-border-radius:3px; margin-top:5px; margin-bottom:16px}
+.clockoff > div span{ font-size:18px}
+.clockoff > div{ float:left; font-size:14px; margin-right:5px; font-weight:bold; color:#fff;}
+.clockoff > div.title{ text-transform:uppercase; font-size:16px; margin-top:3px}
+
+/*Clock*/
+.show_clock .clock{ clear:both}
+.clock_style_1{overflow:hidden;margin:8px 0 7px;}
+.clock_style_1 .clock li{float:left;text-align:center;margin:0 5px 5px 0;}
+.clock_style_1 .clock > li{margin:0 0 5px 0;}
+.clock_style_1 .clock > li:first-child{margin:0 5px 5px 0;}
+.clock_style_1 .clock li span{/*border:1px solid;*/padding:7px 15px 8px;display:inline-block;/*color:#fff;background:#333;padding:6px;font-size:24px;line-height:1;display:inline-block;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;
+box-shadow:0 2px 2px 0 #979797;-moz-box-shadow:0 2px 2px 0 #979797;-webkit-box-shadow:0 2px 2px 0 #979797;*/}
+.clock_style_1 .clock li span{
+	background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(242,242,242,1) 51%, rgba(242,242,242,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(51%,rgba(242,242,242,1)), color-stop(100%,rgba(242,242,242,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(242,242,242,1) 51%,rgba(242,242,242,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(242,242,242,1) 51%,rgba(242,242,242,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(242,242,242,1) 51%,rgba(242,242,242,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(242,242,242,1) 51%,rgba(242,242,242,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+}
+.clock_style_1 .clock li p{text-transform:capitalize;/*font-size:8px;*/margin:4px 0 0;}
+.show_details .clock_style_1 .clock li span{/*font-size:44px;*/}
+.show_details .clock_style_1 .clock li{margin-bottom:0;}

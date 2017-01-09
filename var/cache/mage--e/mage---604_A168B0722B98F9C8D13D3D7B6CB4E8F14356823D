@@ -1,0 +1,17 @@
+<div class="footer-container">
+    <div class="footer row">
+       	<div class="footer-address col-sm-12">
+            <address>2015 Copyright by DuyKhuong</address> 
+            Magento Themes by <a href="http://galathemes.com/magento-themes.html" title="Premium Magento Themes &amp; Premium Magento Templates" >galathemes.com</a>
+		</div>
+		<div class="col-sm-12">
+		<div><div class="widget widget-static-block ">
+    	    	<p class="payment_accept">
+<a class="brand-logo paypal" href="#"  title="Paypal">Paypal</a>
+<a class="brand-logo express " href="#" title="American Express">American Express</a>
+<a class="brand-logo master" href="#" title="Master Card">MasterCard</a>
+<a class="brand-logo visa" href="#" title="Visa">Visa </a>
+</p>
+    </div></div>		</div>
+    </div>
+</div>

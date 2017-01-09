@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gala_Galatitanshopsettings>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <EM_Themeframework />
+            </depends>
+        </Gala_Galatitanshopsettings>
+    </modules>
+</config>

@@ -1,0 +1,34 @@
+.columns #multidealpro_general .form-list td.value{ width:350px}
+.columns #multidealpro_general .form-list td.value input{ margin-top:2px}
+.em_picker{width: 24px;
+height: 22px;
+display: inline-block; text-indent:-9999px; text-align:left; background:url(../images/icon-date.png) 0 -2px no-repeat}
+.stt_disabled,
+.stt_enabled,
+.stt_end,
+.stt_running,
+.stt_queued{display: block;
+height: 16px;
+background:url(../images/bg_notifications.gif) 0 -32px no-repeat;
+font: bold 10px/16px Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+text-align: center;
+padding: 0 0 0 7px;
+margin: 1px 0;
+white-space: nowrap;
+color: #fff;}
+.stt_enabled,
+.stt_running{background:url(../images/bg_notifications.gif) 0 -48px no-repeat}
+.stt_disabled,
+.stt_end{background:url(../images/bg_notifications.gif) 0 0px no-repeat}
+.stt_disabled span,
+.stt_enabled span,
+.stt_queued span,
+.stt_end span,
+.stt_running span{float:left; display:block; padding-right:7px; min-width:50px; text-align:center}
+.stt_queued span{ background: url(../images/bg_notifications.gif) right -32px no-repeat}
+.stt_disabled span,
+.stt_end span{ background: url(../images/bg_notifications.gif) right 0px no-repeat; }
+.stt_enabled span,
+.stt_running span{ background: url(../images/bg_notifications.gif) right -48px no-repeat;}
+

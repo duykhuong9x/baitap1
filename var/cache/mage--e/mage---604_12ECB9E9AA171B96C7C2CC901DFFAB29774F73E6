@@ -1,0 +1,18 @@
+
+    <div class="widget widget-static-block ">
+    	    	<div><form id="search_mini_form" action="http://localhost/galatitanshop-full-package/index.php/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <label for="search">Tìm kiếm:</label>
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Tìm" class="button"><span><span>Tìm</span></span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Từ khóa cần tìm');
+            searchForm.initAutocomplete('http://localhost/galatitanshop-full-package/index.php/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+</div>    </div>
+

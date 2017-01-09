@@ -1,0 +1,35 @@
+<?php
+	$model	=	Mage::getModel('catalog/category');
+	$rootCategoryId = Mage::app()->getStore()->getRootCategoryId();
+	$category = $model->load($rootCategoryId);	
+	$curId = $this->getRequest()->getParam('cat');
+	
+	$_helper    = $this->helper('catalog/output');
+	
+	$cates	=	Mage::helper('galatitanshopsettings')->getCategoriesCustom($category,$curId);
+    $limit = $cates->count();
+?>
+
+<div class="featured_category_content">
+	<ol class="category-grid featured-category-item">        
+		<?php $i = 1; foreach($cates as $_cate): ?>
+			<?php $_cate	=	Mage::getModel('catalog/category')->load($_cate->getId()); ?>
+			<?php if($_cate->getIsActive() == 1): ?>
+				<li class="item-category">
+					<div class="cate_info">
+                        <?php
+                            $_category = Mage::getModel('catalog/category')->load($_cate->getId());
+                            $collection = Mage::getResourceModel('catalog/product_collection')->addCategoryFilter($_category);
+                            Mage::getSingleton('catalog/product_status')->addVisibleFilterToCollection($collection);
+                            Mage::getSingleton('catalog/product_visibility')->addVisibleInCatalogFilterToCollection($collection);
+                            
+                            $products_count =  $collection->count(); 
+                        ?>
+						<h5 class="cate_name"><a href="<?php echo Mage::getModel("catalog/category")->load($_cate->getId())->getUrl() ?>" title="<?php $this->stripTags($_helper->categoryAttribute($_cate, $_cate->getName(), 'name'), null, true) ?>"><?php echo $_helper->categoryAttribute($_cate, $_cate->getName(), 'name') ?><span><?php echo '('.$products_count.')' ?></span></a></h5>
+					</div>							                     
+				</li>
+            <?php endif ?>
+            <?php $i++; ?>
+        <?php endforeach; ?>
+    </ol>
+</div>

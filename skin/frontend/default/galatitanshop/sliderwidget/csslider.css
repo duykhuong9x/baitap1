@@ -1,0 +1,40 @@
+.csslider {position:relative;}
+.csslider .viewport{overflow:hidden;}
+.vertical.csslider .viewport{height:344px;}
+.horizontal.csslider ul.slides > li{float:left;}
+
+
+.csslider.vertical .viewport > ul > li {display:block;}
+.csslider li.itemslider {float:left;}
+.csslider li.item {margin-bottom:20px;}
+.csslider a.next,.csslider a.prev{
+	position:absolute;
+    top:0;
+	-moz-transition: all 300ms ease; -webkit-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease;
+}
+.csslider .product-shop {}
+.csslider .no-float .product-image {float:none;}
+.csslider  a.product-image {display:block;}
+
+.csslider a.prev, .csslider a.next {text-indent:-999em; display:inline-block; text-align:left;}
+.csslider a.prev{}
+.csslider a.next{right:0}
+
+
+.csslider a.prev {position:absolute; top:-34px; right:30px; width:24px; height:24px; cursor:pointer; background:transparent url(../images/icons.png) no-repeat -195px -219px;
+}
+
+.csslider a.prev:hover {background-position:-195px -249px}
+.csslider a.next{position:absolute; top:-34px; right:0px; width:24px; height:24px; cursor:pointer; background:transparent url(../images/icons.png) no-repeat -224px -219px;}
+.csslider a.next:hover{background-position: -224px -249px;}
+.emtabs .csslider a.next:hover{ background-position: -224px -188px;}
+.emtabs .csslider a.prev:hover{ background-position:-195px -188px}
+.csslider.vertical a.next{ background-position: -295px -188px;}
+.csslider.vertical a.prev{ background-position: -295px -218px;}
+.emtabs .csslider.vertical a.next:hover{ background-position: -326px -188px;}
+.emtabs .csslider.vertical a.prev:hover{ background-position:-326px -218px}
+.csslider.vertical a.next:hover{ background-position: -265px -188px;}
+.csslider.vertical a.prev:hover{ background-position:-265px -218px}
+
+.deal_of_the_day .csslider a.prev, .deal_of_the_day .csslider a.next {top:35%;}
+

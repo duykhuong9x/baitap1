@@ -1,0 +1,51 @@
+/**
+ * EMThemes
+ *
+ * @license commercial software
+ * @copyright (c) 2012 Codespot Software JSC - EMThemes.com. (http://www.emthemes.com)
+ */
+.galatitanshop_typography_page_bg_image img,
+.galatitanshop_typography_top_header_bg_image img ,
+.galatitanshop_typography_header_bg_image img ,
+.galatitanshop_typography_footer_bg_image img,
+.galatitanshop_typography_body_bg_image img{ width:30px; height:30px; border:2px solid #ffffff }
+.galatitanshop_typography_page_bg_image:hover img,
+.galatitanshop_typography_page_bg_image.selected img,
+.galatitanshop_typography_top_header_bg_image:hover img,
+.galatitanshop_typography_top_header_bg_image.selected img,
+.galatitanshop_typography_header_bg_image:hover img,
+.galatitanshop_typography_header_bg_image.selected img,
+.galatitanshop_typography_footer_bg_image:hover img,
+.galatitanshop_typography_footer_bg_image.selected img,
+.galatitanshop_typography_body_bg_image:hover img,
+.galatitanshop_typography_body_bg_image.selected img{ border:2px solid #000000 }
+
+.color_pattern { display:inline-block; width:10px; height:10px; vertical-align:text-bottom; border:1px solid #333; }
+
+#row_galatitanshop_typography_customcss label,
+#row_galatitanshop_typography_fonts label,
+#row_galatitanshop_typography_general label,
+#row_galatitanshop_typography_header label,
+#row_galatitanshop_typography_menu label,
+#row_galatitanshop_typography_body label,
+#row_galatitanshop_typography_footer label,
+#row_galatitanshop_typography_button label,
+#row_galatitanshop_typography_button1 label,
+#row_galatitanshop_typography_button2 label,
+#row_galatitanshop_typography_button3 label,
+#row_galatitanshop_typography_button4 label,
+#row_galatitanshop_typography_additional label{font-size:20px; color: #eb5e00;text-transform:uppercase;}
+
+#row_galatitanshop_typography_customcss .use-default, #row_galatitanshop_typography_customcss .scope-label,
+#row_galatitanshop_typography_fonts .use-default, #row_galatitanshop_typography_fonts .scope-label,
+#row_galatitanshop_typography_general .use-default, #row_galatitanshop_typography_general .scope-label,
+#row_galatitanshop_typography_header .use-default, #row_galatitanshop_typography_header .scope-label,
+#row_galatitanshop_typography_menu .use-default, #row_galatitanshop_typography_menu .scope-label,
+#row_galatitanshop_typography_body .use-default, #row_galatitanshop_typography_body .scope-label,
+#row_galatitanshop_typography_footer .use-default, #row_galatitanshop_typography_footer .scope-label,
+#row_galatitanshop_typography_button .use-default, #row_galatitanshop_typography_button .scope-label,
+#row_galatitanshop_typography_button1 .use-default, #row_galatitanshop_typography_button1 .scope-label,
+#row_galatitanshop_typography_button2 .use-default, #row_galatitanshop_typography_button2 .scope-label,
+#row_galatitanshop_typography_button3 .use-default, #row_galatitanshop_typography_button3 .scope-label,
+#row_galatitanshop_typography_button4 .use-default, #row_galatitanshop_typography_button4 .scope-label,
+#row_galatitanshop_typography_additional .use-default, #row_galatitanshop_typography_additional .scope-label{display:none !important;}

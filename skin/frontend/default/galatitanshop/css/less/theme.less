@@ -1,0 +1,782 @@
+body{
+	.changeAllColor(@body_text2_color; @body_bg_color);
+	.changeFont(@general_font);
+}
+a
+{ 
+	.link(@body_text2_color, @body_text5_color);
+}
+
+
+
+.no-rating, .ratings{ .changeColor(@body_text4_color);}
+/* Headings */
+h1, .h1            { .changeFont(@h1_font); margin:0 0 10px}
+h2, .h2           { .changeFont(@h2_font); margin:0 0 10px}
+h3, .h3          { .changeFont(@h3_font); margin:0 0 10px}
+h4, .h4            { .changeFont(@h4_font); margin:0 0 10px}
+h5, .h5            { .changeFont(@h5_font); margin:0 0 10px}
+h6, .h6            { .changeFont(@h6_font); margin:0 0 10px}
+/* Form Elements */
+input.input-text, select, textarea{
+	.changeAllColor(@body_text2_color; @body_line_color; @body_bg3_color; @general_font);
+}
+code{ .changeColorFont(@body_text2_color; @general_font)}
+.label{ .changeColorFont(@body_text2_color; @general_font); padding:0}
+.block-cart-top  .actions a,
+a.btn-view-all,
+.opc #opc-login button.button,
+p.back-link a,
+#containerDiv .ajaxcart .row2 a,
+.block.block-compare .actions a,
+#containerDiv .ajaxcart .row2 a,
+button.button{
+	.changeAllColor(@btn1_text_color; @btn1_line_color; @btn1_bg_color; @btn1_font);
+	&:hover{
+		.changeAllColor(@btn1_bg_color; @btn1_line_color; @btn1_text_color; @btn1_font);
+	}
+}
+.comments button.button,
+.block-reorder button.button.btn-cart,
+.customer-account-edit .em_col_main .my-account button.button,
+.box-info .col2-set > .box .box-content a,
+.box-info a.edit,
+.opc button.button,
+.account-create button.button,
+.new-users button.button,
+.block-cart-top .actions button.button,
+.block.block-compare button.button,.form_review button.button,.cart .btn-update{
+	
+	.changeAllColor(@btn3_text_color; @btn3_line_color; @btn3_bg_color; @btn3_font);
+	&:hover{
+		.changeAllColor(@btn3_bg_color; @btn3_line_color; @btn3_text_color; @btn3_font);
+	}
+}
+#em_quickshop_handler span{
+	.changeAllColor(@btn2_bg_color; @btn2_text_color; @btn2_text_color; @btn2_font);
+}
+#em_quickshop_handler:hover span{ .changeAllColor(@btn2_text_color; @btn2_text_color; @btn2_bg_color; @btn2_font);}
+.block .block-content > .actions a,
+.sidebar button.button,
+a.viewall{
+	.changeAllColor(@btn2_text_color; @btn2_line_color; @btn2_bg_color; @btn2_font);
+	&:hover{
+		.changeAllColor(@btn2_bg_color; @btn2_line_color; @btn2_text_color; @btn2_font);
+	}
+}
+#review-buttons-container.buttons-set button.button,
+.checkout-types button.button{
+	.changeAllColor(@btn4_text_color; @btn4_line_color; @btn4_bg_color; @btn4_font);
+	&:hover{
+		.changeAllColor(@btn4_bg_color; @btn4_line_color; @btn4_text_color; @btn4_font);
+	}
+}
+
+/*shadow*/
+.product-image-custom:hover,
+.em_col_main .products-grid li.item:hover{.box-shadow(@box_shadow);}
+
+/*border radius*/
+.col-menu, .dd-menu-link .menu-container, .em-catalog-navigation li > ul,
+.review-product-list .product-view .box-reviews .pager,
+.box-collateral-content,
+.cart .cart-collaterals,
+.checkout-cart-index .table-responsive,
+.product-view .form-add form,
+.product-view-detail,
+.toolbar-bottom, .toolbar,
+.category-products .sorter,
+.category-description,
+.em_col_content,
+.products-list li.item, 
+.products-grid li.item,
+.products-grid li.item .product-item .product-image img,
+.products-grid li.item .product-item{ .border-radius(@rounded_corner);}
+
+.multidealpro_recent .multidealpro_products,
+.product-view .box-collateral dd,
+.product-view .ui-slider-tabs-content-container,
+.block-cart-top .cart-popup,
+.em_sidebar .block{ .border-bottom-radius(@rounded_corner)}
+.show_details .title, .deal_title,
+.product-view .box-collateral dt,
+.ui-slider-tabs-list li a,
+.products-grid li.item .product-item .bkg-hover,
+.wrapper_main .block .block-title, .em_sidebar .widget-title{ .border-top-radius(@rounded_corner)}
+/*icon*/
+.link-wishlist,
+.add-to-links li a,
+.block-wishlist .link-cart,
+button.button.btn-cart span,
+.icon { .hideText(); }
+.icon.search{ .changeIcon(20px, ~'0px -138px')}
+.icon.my_account{
+	.changeIcon(17px, ~'-32px 0')
+}
+.icon.my_wishlist{
+	.changeIcon(17px, ~'0 0')
+}
+.icon.log_in{
+	.changeIcon(17px, ~'-74px 0')
+}
+.icon.register{
+	.changeIcon(17px, ~'-119px 0')
+}
+.links li:hover span.icon.my_account{ 
+	.changeBkgPosition(-32px -25px)
+}
+.links li:hover span.icon.my_wishlist{ 
+	.changeBkgPosition(0 -25px)
+}
+.links li:hover span.icon.log_in{ 
+	.changeBkgPosition(-74px -25px)
+}
+.links li:hover span.icon.register{ 
+	.changeBkgPosition(-119px -25px)
+}
+.icon.phone{ 
+	margin-right:7px; 
+	padding-top:0;
+	.changeIcon(17px, ~'-163px 0')
+}
+/*icon footer*/
+.icon.address { .changeIcon(17px, ~'0px -399px')}
+.icon.fone { .changeIcon(17px, ~'-63px -399px')}
+.icon.email { .changeIcon(17px, ~'-28px -399px')}
+
+.icon.facebook { 
+	.changeIcon(30px, ~'9px -279px');
+	&:hover{
+		.changeBkgPosition(9px -317px);
+	}
+
+}
+.icon.pinterest {
+	.changeIcon(30px, ~'-26px -279px');
+	&:hover{
+		.changeBkgPosition(-26px -317px);
+	}
+}
+.icon.twitter {
+	.changeIcon(30px, ~'-62px -279px');
+	&:hover{
+		.changeBkgPosition(-62px -317px);
+	}
+}
+.icon.google {
+	.changeIcon(30px, ~'-96px -279px');
+	&:hover{
+		.changeBkgPosition(-96px -317px);
+	}
+}
+.icon.rss {
+	.changeIcon(30px, ~'-132px -279px');
+	&:hover{
+		.changeBkgPosition(-132px -317px);
+	}
+}
+.icon.vimeo { 
+	.changeIcon(30px, ~'-166px -279px');
+	&:hover{
+		.changeBkgPosition(-166px -317px);
+	}
+}
+
+.footer_top_container .list-inline li a{
+	.changeAllColor(@footer_text_color; @footer_line_color; @footer_bg3_color);
+	&:hover{
+		.changeAllColor(@footer_text_color; @btn1_bg_color; @btn1_bg_color);
+		border-bottom-color:darken(@footer_text3_color, 100%);
+	}
+}
+/*.em_col_main .special_slider .products-grid li.item button.button.btn-cart:before,
+.em_area16 .widget-slider-home .products-grid li.item button.button.btn-cart:before,
+.em_col_main .wiget-slider-home .products-grid li.item button.button.btn-cart:before,*/
+
+.sidebar .block-bestseller button.button.btn-cart,
+.block-wishlist .link-cart,
+button.button.btn-cart{ 
+	.changeIcon(30px, ~'5px -433px'); 
+	.changeAllColor(@btn1_text_color; @btn1_line_color; @btn1_bg_color; @btn1_font);
+	border-bottom-color: darken(@btn1_line_color, 15%);
+	&:hover{
+		.changeIcon(30px, ~'5px -463px');
+		.changeAllColor(@btn1_bg_color; @btn1_line_color; @btn1_text_color; @btn1_font);
+	}
+	
+}
+.product-view-detail button.button.btn-cart:before{ 
+	.changeIcon(30px, ~'5px -433px'); 
+	.changeAllColor(@btn1_text_color; @btn1_line_color; @btn1_bg_color; @btn1_font);
+	border-bottom-color: darken(@btn1_line_color, 15%);
+	
+}
+.product-view-detail button.button.btn-cart:before:hover{ 
+	.changeIcon(30px, ~'5px -463px');
+	.changeAllColor(@btn1_bg_color; @btn1_line_color; @btn1_text_color; @btn1_font);
+}
+/*.em_col_main .special_slider .products-grid li.item button.button.btn-cart,
+.em_area16 .widget-slider-home .products-grid li.item button.button.btn-cart,
+.em_col_main .wiget-slider-home .products-grid li.item button.button.btn-cart,*/
+.product-view-detail .button_addto button.button.btn-cart{
+	.changeAllColor(@btn1_text_color; lighten(@btn1_line_color, 10%); lighten(@btn1_bg_color, 10%); @btn1_font);
+	border-bottom-color: darken(lighten(@btn1_line_color, 10%), 15%);
+	width:auto !important; height:auto !important; 
+	&:hover
+	{	
+		.changeAllColor(@btn1_bg_color; @btn1_line_color; @btn1_text_color; @btn1_font);
+	}
+}
+
+.link-wishlist,
+.add-to-links li a{
+		.changeAllColor(@body_text_color; @body_line_color; @body_bg3_color);
+}
+.link-wishlist,
+.add-to-links li a.link-wishlist
+{ 
+	.changeIcon(30px, ~'-48px -433px');
+}
+.add-to-links li a.link-compare
+{ 
+	.changeIcon(30px, ~'-98px -433px');
+}
+.link-wishlist:hover,
+.add-to-links li a:hover{
+	.changeLine(@body_text6_color);
+}
+.link-wishlist:hover,
+.add-to-links li a.link-wishlist:hover
+{ 
+	.changeIcon(30px, ~'-48px -463px');
+}
+.add-to-links li a.link-compare:hover
+{ 
+	.changeIcon(30px, ~'-98px -463px');
+}
+
+
+
+/*Header*/
+.wrapper.em-box-custom .wrapper_header .header-top .container,
+.wrapper.em-box-custom .wrapper_header .logo_menu_wrapper,
+.wrapper_header{ 
+	.changeBkg (@header_bg_color; @image_bg_url; @header_bg_image; @header_bg_position; @header_bg_repeat)}
+.wrapper_header{ }
+.wrapper.em-box-custom .wrapper_cart_search .cart_search_container,
+.wrapper_cart_search{ .changeBkg (@header_bg2_color)}
+
+.header-top,
+.header-container .toolbar-switch .toolbar-dropdown,
+.wrapper.em-box-custom .header-top .container{ .changeLine(@header_line_color);}
+.header-top-right span.number{ .changeColor(@header_text3_color)}
+.header-top .welcome-msg,
+.header-top-right p span{ .changeColor(@header_text_color)}
+
+
+.header-container .toolbar-switch,
+.header-top ul.links a{.link(@header_text_color; @header_text2_color)}
+.header-top ul.links a::before { .changeColor(@header_text2_color)}
+.header-container .toolbar-switch .toolbar-dropdown li a{ .changeColor(@header_text_color)}
+.header-container .toolbar-switch .toolbar-dropdown,
+.header-container .toolbar-switch .toolbar-dropdown ul{ 
+	.changeAllColor(@header_text_color; @header_line_color; @header_bg3_color);}
+.header-container .toolbar-switch .toolbar-dropdown li{
+	.changeBkg(@header_bg_color);
+	&:hover{
+		.changeBkg(darken(@header_bg_color, 10%));
+	}
+}
+.form-search input.input-text{ .changeColor(lighten(@header_text_color, 20%))}
+.form-search{ .changeBkg(@header_bg3_color);}
+/*Menu*/
+.em_nav .menu-container,
+.em_nav a{
+	.changeFont (@dropmenu_font);
+	.changeColor(@dropmenu_text_color);
+	h5{
+		.changeColor(@dropmenu_text2_color);
+	}
+}
+/*.em_nav .menu-item-depth-0 li:hover a,
+.em-catalog-navigation.vertical li.level0 li:hover a,
+.em_nav .menu-container li:hover a{
+	.link(@dropmenu_text_color; @dropmenu_text2_color);
+}
+.em_nav .menu-item-depth-0 li:hover a,
+.em-catalog-navigation.vertical li.level0 li:hover a,
+.em_nav .menu-container li:hover a{
+	.changeColor(@dropmenu_text_color)
+}*/
+.em_nav li:hover > a{ .changeColor(@dropmenu_text2_color)}
+
+.hnav .menu-item-depth-0 > .em-catalog-navigation > li.level0 > a,
+.em_nav .hnav .menu-item-depth-0 > a{ 
+	.changeColorFont (@topmenu_text_color; @topmenu_font);
+}
+.col-menu,
+.dd-menu-link .menu-container, 
+.em-catalog-navigation li > ul{ .changeAllColor(@dropmenu_text_color; @dropmenu_line_color; @dropmenu_bg_color; @dropmenu_font);}
+/*hover*/
+.nav-container #nav li:hover a.level-top span,
+.menu-item-depth-0 > .em-catalog-navigation > li.level0:hover > a span,
+li.menu-item-depth-0:hover > a span{
+	.changeAllColor(@topmenu_hover_text_color; @topmenu_line_color; @topmenu_hover_bg_color);
+}
+/* vertical menu */
+.em_nav .vnav .menu-item-depth-0 > .em-catalog-navigation > li.level0 > a,
+.em_nav .vnav .menu-item-depth-0 > a{ 
+	.changeColorFont (@header_text_color; @topmenu_font); font-size:120%;
+}
+
+.em_nav .vnav .menu-item-depth-0 > .em-catalog-navigation > li.level0:hover > a span,
+.em_nav .vnav .menu-item-depth-0:hover > a span{
+	.changeAllColor(@header_text4_color; @header_bg2_color; @header_bg4_color);
+}
+
+.em_nav em, .em_nav code{ .changeColorFont (@dropmenu_text_color; @dropmenu_font)}
+
+.menu-title{ 
+	.changeColorFont(@dropmenu_text_color; @dropmenu_font);
+	.changeLine(@topmenu_line_color);
+}
+.menu-title .option{ border-top-color:@topmenu_line_color;}
+@media (max-width: 767px){
+	.menu-item-depth-0 > a, 
+	.em-catalog-navigation.horizontal > li > a,
+	.em_nav li.menu-item-depth-0 > a,
+	.em_nav .vnav .menu-item-depth-0 > .em-catalog-navigation > li.level0 > a{
+	border-color:@topmenu_line_color;}
+	.menu-item-depth-0 > .em-catalog-navigation > li.level0 > a.arrow, .em_nav .menu-item-depth-0 > a.arrow {
+	border-left-color:@topmenu_line_color !important;}
+}
+
+/*fixed top menu*/
+.navbar-fixed-top{ .changeBkg(@header_bg5_color)}
+.navbar-fixed-top .hnav .menu-item-depth-0 > .em-catalog-navigation > li.level0 > a, .navbar-fixed-top .em_nav .hnav .menu-item-depth-0 > a,
+.navbar-fixed-top .nav-container #nav li > a.level-top span, .navbar-fixed-top .menu-item-depth-0 > .em-catalog-navigation > li.level0 > a span, .navbar-fixed-top li.menu-item-depth-0 > a span
+{ .changeColor(@header_text4_color)}
+.navbar-fixed-top .hnav .menu-item-depth-0 > .em-catalog-navigation > li.level0:hover > a, .navbar-fixed-top .em_nav .hnav .menu-item-depth-0:hover > a{.changeBkg(@header_bg4_color); .changeColor(@header_text4_color) }
+.header-bottom-right.navbar-fixed-top .menu-item-depth-0 > .em-catalog-navigation > li.parent:hover:after, .header-bottom-right.navbar-fixed-top .hnav > .menu-item-parent:hover:after{ border-top-color:@header_bg4_color}
+
+/*dropdown cart*/
+.dropdown-cart-content{
+	.changeAllColor(@header_text4_color; @header_text4_color; @header_bg4_color);
+}
+.dropdown-cart:hover .dropdown-cart-content { .changeBkg(@header_bg5_color);}
+.block-cart-top .cart-popup:before{ border-top-color:@header_bg2_color}
+.block-cart-top .block-title a{
+	.changeColorFont(@header_text4_color; @h6_font);
+	.info_cart,
+	.price{ font-size:80%}
+}
+.truncated .truncated_full_value .item-options,
+.block-cart-top .cart-popup{
+	.changeAllColor(@header_text_color; @header_line_color; @header_bg_color);
+}
+.block-cart-top .block-subtitle{
+	.changeAllColor(@header_text2_color; @header_line_color; transparent; @h6_font);
+}
+.block.block-cart-top .block-content .actions{ .changeLine(@header_line_color);}
+.block-cart-top .actions .label{ .changeColorFont(@header_text5_color; @h3_font);}
+.block-cart-top p.amount-content a,
+.block-cart-top .actions .price{ .changeColor(@header_text2_color);}
+.block-cart-top .block-title .info_cart .price{ .changeColor(@header_text4_color);}
+
+/*menu left*/
+.menu-wrapper .menuleftText{
+	.changeAllColor(@header_text4_color;transparent; @header_bg5_color; @h3_font);
+}
+/*Menu product*/
+.em_nav h3,
+.em_nav .widget-title h3,
+.em_nav .widget .widget-title h3,
+.em_nav h5, 
+.em_nav .h5{ 
+	.changeAllColor(@dropmenu_text2_color; @dropmenu_text_color; @dropmenu_bg_color; @h6_font);
+	font-weight:bold;
+}
+.em_nav .widget-title h3{ .changeColor(@dropmenu_text_color);}
+.em_nav .col-title{ .changeColor(lighten(@dropmenu_text_color, 20%));}
+
+/*=======Home Page============*/
+.wrapper.em-box-custom .breadcrumbs-container,
+.wrapper_breadcrumbs{ .changeAllColor(@body_text2_color; @body_line_color; @body_bg2_color);}
+.cms-index-index .wrapper.em-box-custom .menu_slideshow_container,
+.cms-index-index .wrapper_menu_slideshow{
+	.changeBkg (@body_bg2_color; @image_bg_url; @body_bg_image; @body_bg_position; @body_bg_repeat);
+	.changeLine(@body_line_color);
+}
+
+.wrapper.em-box-custom .wrapper_main.wrapper_main_banner .container_banner,
+.wrapper_main,
+.wrapper.em-box-custom .container_main_end,
+.wrapper.em-box-custom .main_container{
+	.changeAllColor(@body_text2_color; transparent; @body_bg_color);
+	.changeBkg (@body_bg_color; @image_bg_url; @body_bg_image; @body_bg_position; @body_bg_repeat);
+}
+.wrapper_main .block{ 
+	.changeAllColor(@body_text2_color; transparent; @body_bg3_color);
+}
+.block-category .block_title,
+.show_details .title,
+.deal_title,
+.wrapper_main .block .block-title,
+.em_sidebar .widget-title{
+	.changeAllColor(@body_text_color; darken(@body_bg4_color, 10%); @body_bg4_color);
+	span{
+		.changeFont(@h4_font);
+	}
+	h2, h3, strong/*, span*/{ .styleTitleBlock(~'13px 20px 9px'; 0); .changeFont(@h4_font);}
+}
+.show_details .title{
+	.changeAllColor(@body_text_color; darken(@body_bg4_color, 10%); @body_bg4_color);
+}
+.deal_title span,
+.show_details .title span{ .styleTitleBlock(~'9px 20px 7px'; 0)}
+.em_area16 .widget-title,
+.em_col_main .widget-title{
+	.changeAllColor(@body_text3_color; @body_line_color; @body_bg_color);
+	span{
+		.changeFont(@h4_font);
+	}
+	h2{	.changeLine(@body_text3_color);}
+}
+
+.ui-slider-tabs-list{
+	li{
+		.changeFont(@h4_font);
+	}
+	li a{
+		.changeAllColor(@body_text2_color; transparent; transparent); 
+	}
+	li.selected a,
+	li:hover a{
+		.changeAllColor(@body_text6_color; @body_text6_color; @body_bg5_color);
+	}
+}
+.ui-slider-tabs-content-container{ .changeLine(@body_line_color);}
+
+/*Footer*/
+.wrapper.em-box-custom .footer_top_container,
+.wrapper_footer_top{ 
+	.changeAllColor(@footer_text_color; @footer_line_color; @footer_bg_color);
+	.changeBkg (@footer_bg_color; @image_bg_url; @footer_bg_image; @footer_bg_position; @footer_bg_repeat)
+}
+.footer-brand{
+	.changeLine(@footer_line_color);
+}
+.newsletter-content{
+	.changeColorFont(@footer_text2_color; @h1_font);
+	.newsletter-title{ font-size:150%;}
+	.block-subscribe{ .changeColorFont(@body_text4_color; @general_font)}
+}
+.block-subscribe .form-subscribe-content .input-box input.input-text{
+	.border-radius(30px);
+	.changeAllColor(@footer_text_color; @footer_line3_color; @footer_bg3_color);
+}
+
+.inner_links{
+	.h5{.changeAllColor(@footer_text2_color; @footer_line_color; tranparent; @h5_font);}
+	a{ .link(@footer_text_color; @footer_text3_color);}
+}
+.wrapper.em-box-custom .footer_container,
+.wrapper_footer{
+	.changeAllColor(@footer_text4_color; @footer_line2_color; @footer_bg2_color);
+	a{ .link(@footer_text4_color; @footer_text3_color);}
+}
+.block-subscribe input.input-text{ .changeColor(@footer_text_color);}
+/*Multidealpro*/
+.clock_style_1 .clock li p{
+	.changeColorFont(@body_text2_color, @h6_font);
+	font-weight:400;
+}
+.deal_qty,
+.clock_style_1 .clock li span{
+	.changeAllColor(@body_text3_color; @body_line_color; transparent; @h5_font);
+}
+.msg_soldout{ .changeAllColor(@body_text6_color; @body_line_color; transparent; @h3_font);}
+.clock li span{ .changeColor( @body_text3_color)}
+.clock li span.days{ .changeColor( @body_text5_color)}
+.show_details .show_clock{
+	.changeLine(@body_line_color);
+	.border-bottom-radius(3px);
+}
+.show_details .clock_style_1 .clock li span{.changeColorFont(@body_text3_color, @h1_font)}
+.multidealpro_recent .multidealpro_products .products-grid li.item{ .changeLine(@body_line_color)}
+/*EM Blog*/
+.em_block-recent-post-footer .post-title{ .changeColor( @footer_text3_color);}
+.em_block-recent-post-footer .time-stamp{ .changeColor( @footer_text4_color);}
+.em_post-items .em_post-item .post-title h2{ .changeFont( @general_font); font-weight:bold; font-size:110%}
+.em_post-items .em_post-item .post-title h2 a{ font-weight:bold}
+.comment-count,
+.comment-time,
+.comment-post-link,
+.post-footer p{ .changeColor( @body_text3_color);}
+.post-footer .comment-user{ .changeColor( @body_text5_color);}
+.category-title.page-title h1{ font-size:270%}
+.em_blog-cat li:hover,
+.em_blog-cat li.current{ .changeColor( @body_text5_color);}
+.em_blog-cat li.parent.current a{ .link( @body_text2_color; @body_text5_color);}
+.em_blog-cat li.parent.current li.current > a{ .link( @body_text5_color; @body_text5_color);}
+.em_post-item .post-content .tags,
+.em_post-item .post-content .post-share,
+.em_post-item .post-content .post-footer{ .changeLine( @body_line_color);}
+#allcomments .comment-button button.button{.changeColor( @body_text3_color);}
+#allcomments .comment-button button.button:hover{.changeColor( @body_text5_color);}
+
+/*Background*/
+.box-collateral-content,
+.multidealpro_recent .multidealpro_products,
+.category-description,
+#containerDiv .ajaxcart,
+#menu-default,
+#back-top a,
+.quickshop-main,
+.form-comment,
+#allcomments > .comment-item,
+.blog-post-view .post-content,
+.blog-post-view .post-title,
+.em_post-items > .em_post-item,
+.my-account,
+.bkg-content,
+.cart-empty,
+.opc,
+.account-create,
+.em_col_content,
+.form-add form,
+.account-login,
+.table-responsive,
+.cart .cart-collaterals,
+.review-product-list .product-view .box-reviews .pager,
+.product-view .box-collateral dd,
+.product-view .box-collateral dt{ .changeBkg( @body_bg3_color);}
+
+/*line product-name*/
+.box-reviews dt a:before, 
+.product-name a:before, 
+.product-view .product-name h1:before{ .changeBkg( @body_line_color);}
+
+.box3{ .changeAllColor(@body_text2_color; @body_line_color; @body_bg3_color);}
+.product-name{.changeFont(@h5_font); font-weight:500}
+.dashboard .number,
+.product-name a{
+	.link(@body_text3_color; @body_text5_color);
+	font-size:110%;
+	font-weight:500;
+}
+
+.price{ 
+	.changeColor(@body_text3_color);
+	.changeFont(@h6_font);
+	font-size:110%;
+	font-weight:600;
+	
+}
+.page-title h2,
+.page-title h1{ .changeColorFont(@body_text3_color; @h1_font); font-size:300%}
+.old-price .price{ .changeColor(@body_text4_color);}
+.sale_off,
+.productlabels_icons .label{ .changeColorFont(@body_text_color; @h5_font); font-weight:500; font-size:110%;}
+.sale_off{ font-size:130%}
+
+
+
+/*Table*/
+.data-table thead th ,
+.data-table thead th.last,
+.data-table thead th:first-child,
+.data-table tbody td,
+.data-table tbody td.last,
+.data-table thead th:first-child,
+.data-table tbody td:first-child,
+.data-table tbody tr.last td { .changeLine(@body_line_color);}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td{  border:1px solid @body_line_color;}
+
+/* View Type: Grid */
+.products-list li.item,
+/*.em_col_main .products-grid li.item .product-item,*/
+.products-grid li.item{
+	.changeAllColor(@body_text2_color; transparent; @body_bg3_color);
+}
+.em_col_main .products-grid li.item:hover{ .changeLine(@btn1_line_color);} 
+
+/* View Type: List */
+
+/* Block sidebar*/
+.gift-messages-form,
+.block-wishlist .block-content li.item,
+.qty-ctl button,
+.block .block-content li.item,
+.block.block-compare li.item,
+.em_sidebar .products-grid li.item,
+.em_sidebar .products-list li.item,
+.review-product-list .product-view  .box-reviews .reviews,
+.product-view .box-collateral,
+.product-view .box-collateral .form_review.have_reviews{ .changeLine(@body_line_color);}
+
+/* Block: Compare Products */
+
+/* BreadCrumbs */
+.breadcrumbs {
+	.changeFont(@h5_font);
+	font-size:120%;
+	font-weight:500;
+	strong{.changeColor(@body_text4_color) ;}
+}
+
+/* Block: Layered Navigation */
+.block-layered-nav .block-content dt{ .changeColorFont(@body_text3_color; @h5_font);}
+.page-popup .page-title h1:before, .block-layered-nav .block-content dt:before{ .changeLine(@body_text3_color);}
+.block-layered-nav .block-content dd{ .changeLine(@body_line_color);}
+.block-layered-nav li a:hover span,.block-layered-nav .block-content dd a:hover,
+.tree-filter li.selected{ .changeColor(@body_text5_color)}
+
+/* Toolbar */
+.toolbar-bottom,
+.toolbar{ .changeFont(@h6_font); .changeBkg(@body_bg3_color;);}
+.pager label, .sort-by label, .sorter label{ .changeColor(@body_text3_color);}
+.pager .pages li a.previous,
+.pager .pages li a.next,
+.category-products .toolbar .toolbar-dropdown ul,
+.category-products .toolbar span.current{ .changeLine(@body_line_color);}
+.category-products .toolbar span.current:before{border-top-color:@body_text3_color;}
+.pager .pages .current{ .changeColor(@body_text5_color)}
+.category-products .toolbar .toolbar-dropdown li:hover{ background:darken(@body_bg3_color, 10%);}
+.pager .pages li a.previous:hover,
+.pager .pages li a.next:hover{.changeLine(@body_text6_color);}
+
+/*Product detail*/
+.product-view-detail,.product-view  .ui-slider-tabs-content-container{ .changeBkg(@body_bg3_color);}
+.product-view .product-name h1{.changeColorFont(@body_text3_color; @h5_font); font-size:150%; font-weight:500}
+
+.product-view .product-shop .short-description h2{ .changeColorFont(@body_text3_color; @h5_font); font-size:110%;}
+.form-comment-container h3,
+.article-comments .form-title,
+.crosssell h2,
+.product-view .box-collateral h2, .form-add h2{ .changeColorFont(@body_text3_color; @h5_font); font-size:130%;}
+/*label,*/
+.comments .required,
+.form-list label,
+.cart .shipping-form label,
+#review-form h4, 
+#review-form label,
+.box-tags .form-add label,
+.add-to-cart label { .changeColorFont(@body_text3_color; @h6_font); font-size:90%}
+
+.product-view .box-tags h3{.changeFont(@general_font)}
+
+
+/*========== Data Table ==========*/
+.data-table{ .changeBkg(@body_bg3_color)}
+.data-table th {.changeColorFont(@body_text3_color; @h5_font); font-size:110%; }
+.data-table thead th {  .changeAllColor(@body_text3_color; @body_line_color; @body_bg6_color);}
+#review-form .data-table th{ font-size:110% !important; .changeColor(@body_text2_color;)}
+
+/*shopping cart*/
+.totals h2,
+.cart .discount h2,
+.cart .shipping h2,
+#checkout-review-table.data-table tfoot td,
+#shopping-cart-totals-table td{ .changeColorFont(@body_text3_color; @h3_font);}
+#checkout-review-table.data-table tfoot td .price,
+.cart .totals td .price{ .changeColorFont(@body_text5_color; @h3_font)}
+
+/*Login - Register*/
+.opc-col .step-title,
+.opc-col .step-title h2,
+.opc-col .step-title .number,
+.my-account .page-title h1,
+.box-head h2,
+.opc .step-title h2,
+.account-create .page-title h1,
+.account-login .page-title h1{ .changeAllColor(@body_text5_color; @body_text5_color; transparent; @h5_font);}
+.opc .section.allow .step-title:hover h2,
+.opc .allow.active .step-title h2{ .changeAllColor(@body_text6_color; @body_text6_color; transparent)}
+.col2-set h3,
+.col2-set h4,
+.form-list li.control label,
+.fieldset .legend,
+.account-create .fieldset .legend,
+.account-login .col2-set h2{ .changeColorFont( @body_text3_color; @general_font); font-size:110%}
+.form-list li.control label{ .changeColor( @body_text2_color;)}
+
+
+/* One Page Checkout */
+.addresses-primary li.item a,
+a.change-pass,
+.block-progress dd > a{ .changeColorFont(@body_text5_color; @h6_font);}
+.opc-block-progress .block-content dt{ .changeAllColor(@body_text3_color; @body_line_color; transparent; @h5_font)}
+#checkout-step-payment .sp-methods label,
+.opc-block-progress .block-content dt span{ .changeLine(@body_text3_color);}
+.opc #checkout-step-login.step .col-2 h4{ .changeColor(@body_text2_color);}
+
+.checkout-onepage-success h2.sub-title{ .changeColorFont( @body_text6_color; @general_font); font-size:110%}
+.checkout-onepage-success .em_col_main p a{ .changeColor( @body_text3_color;)}
+.sp-methods dt,
+.sp-methods label,
+.sp-methods .price{ .changeColor( @body_text2_color;)}
+#checkout-review-table .product-name{ .changeColor( @body_text3_color;)}
+#opc-review #checkout-review-table td.last .price{ .changeColor( @body_text5_color;)}
+
+#opc-login p a{ .changeColor( @body_text5_color;)}
+
+/*My account*/
+.block-account .block-content li:hover,
+.block-account .block-content li.current,
+#my-orders-table td .price,
+.block-account .block-content li.current strong{ .changeColor( @body_text5_color;)}
+.dashboard .welcome-msg strong{ .changeColor( @body_text6_color;)}
+.box-info .col2-set > .box .box-title h3{ .changeColorFont(@body_text6_color; @h5_font);}
+.addresses-list h6.primary{ .changeColorFont(@body_text3_color; @general_font); font-size:110%}
+
+/* back to top */
+#back-top a{ 
+	.changeLine(@body_line_color);
+	&:hover{
+		.changeLine(@body_text5_color);
+	}
+}
+#back-top a:before{ 
+	 border-bottom-color: @body_line_color;
+}
+#back-top a:hover:before{ 
+	 border-bottom-color: @body_text5_color;
+}
+
+/*===========Box/wide==============*/
+.wrapper.em-box-custom{
+	.changeBkg (@page_bg_color; @image_bg_url; @page_bg_image; @page_bg_position; @page_bg_repeat)
+}
+
+/*shadow*/
+.block-banner a:hover:before{ box-shadow: 0 0 0 5px @body_text5_color inset;}
+.four_ads a:hover {
+box-shadow: 0 0 0 5px @body_text5_color inset;
+.changeLine(@body_text5_color);
+}
+
+/*Ajax product*/
+.load-more-image .load-more{ .changeAllColor( @btn2_text_color; @btn2_line_color; @btn2_bg_color; @btn2_font);
+	&:hover{.changeAllColor( @btn2_bg_color; @btn2_line_color; @btn2_text_color);}
+}
+
+/*==================  Store Layout ====================*/
+.ourservice h1{ .changeColor(@body_text_color);}
+.ourservice .content-info h2{.changeColor(@body_text3_color) ; font-weight:700}
+.ourservice .content-info span.job{ .changeLine(@body_text3_color)}
+.ourservice .content-info{ .changeBkg(@body_bg3_color);}
+
+.box_banner .box-content p{ .changeColor(@body_text4_color);}
+.box_banner .box-content a.view-more{.changeColor(@body_text5_color);}
+.box_banner .content span.icon{.changeBkg(@body_bg4_color);
+&:hover{.changeBkg(darken(@body_bg4_color, 10%))}}
+.box_banner .content .icon.icon-sweet{ .changeIcon(50px, ~'-245px -434px')}
+.box_banner .content .icon.icon-fantastic{ .changeIcon(50px, ~'-312px -433px')}
+.box_banner .content .icon.icon-special{ .changeIcon(50px, ~'-370px -433px')}
+
+.em_area15 .widget-title h3,
+.em_area15 .widget-title h2{ .changeColor(@body_text3_color); .changeLine(@body_text3_color);}
+.em_area15 .widget-title{ .changeLine(@body_line_color);}
+
+.category-grid .item-category .cate_name{ font-size:110%; .link(@body_text2_color; @body_text5_color); font-weight:500}

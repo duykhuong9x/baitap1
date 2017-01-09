@@ -1,0 +1,27 @@
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<?php
+    $setting = Mage::helper('galatitanshopsettings');
+    $box = $setting->getGeneral_BoxWide();
+    $isMobile = $setting->checkMobilePhp();
+?>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper <?php if($box=='box' && $isMobile==false):?><?php echo ' em-box-custom';?><?php endif;?>">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page three-columns">
+		<?php echo Mage::helper('themeframework/bootstrap')->displayBootstrapV3($this, '3columns') ?>
+		<?php echo $this->getChildHtml('global_cookie_notice') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?php if(Mage::getStoreConfig('blog/menu/show_recent_post')):?>
+<?php 
+	$helperBlog = Mage::helper('blog');
+	$thumnailWidth = Mage::getStoreConfig('blog/info/recent_thumbnail_width');
+	$thumnailHeight = Mage::getStoreConfig('blog/info/recent_thumbnail_height');
+?>
+<div class="em_block-recent-post-footer">
+    <div class="recent-content">
+        <?php if (count($this->getRecentPost())>0):?>
+        <ol>
+            <?php $i =0; foreach ($this->getRecentPost() as $p): ?>
+                <li class="item">
+					<a href="<?php echo $p->getPostUrl();?>">
+						<img src="<?php echo $helperBlog->resizeImage($p->getImage(),$thumnailWidth,$thumnailHeight,"emblog/post",'thumbnail');?>" alt="" />
+					</a>
+                    <p class="title"><a class="post-title" href="<?php echo $p->getPostUrl(false);?>" ><?php echo $p->getTitle();?></a>
+                    <?php 
+						$shortdes =  $p->getPostIntro();
+						if(strlen($shortdes)>100) { //dem ki tu chuoi $str, 10o la chieu dai muon quy dinh
+							$strCutTitle = substr($shortdes, 0, 100); //cat 100 ki tu dau
+							$shortdes = substr($strCutTitle, 0, strrpos($strCutTitle, ' '));
+						}
+					?></p>
+					<div class="desc"><?php echo $this->stripTags($shortdes);?>
+                    <a href="<?php echo $p->getPostUrl();?>" title="<?php echo $this->__('Read more') ?>" class="cls_view"><?php echo $this->__("[...]") ?></a>
+                    <?php $date = new DateTime($p->getCreatedAt());?></div>
+                    <small class="time-stamp"><?php echo $date->format('M j Y'); ?></small>                 
+                </li>
+            <?php $i++; if ($i ==1) break;?>
+            <?php endforeach; ?>
+        </ol>
+        <?php else:?>
+        	<p class="empty"><?php echo $this->__('No recent post') ?></p>
+        <?php endif;?>
+    </div>
+</div>
+<?php endif;?>

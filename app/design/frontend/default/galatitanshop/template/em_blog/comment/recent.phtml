@@ -1,0 +1,36 @@
+<?php if(Mage::getStoreConfig('blog/menu/show_recent_comment')):?>
+<div class="block em_block-recent-comments">
+    <div class="block-title">
+        <strong><span><?php echo $this->__('Recent Comments')?></span></strong>
+    </div>
+	<div class="block-content">
+		<ol type="square">
+			<?php $rcs = $this->getCommentCollection(); $i = 0;?>
+			<?php if($rcs->count() > 0 ) : ?>
+				<?php foreach($rcs as $rc): ?>
+      				<?php if($i = 0):?>
+      					<?php $class="first";?>
+      					<?php else:$class='';?>
+      				<?php endif;?>
+      					<li class="item recent-comment-item<?php echo $class;?>">
+						   <a class="comment-title" href="<?php echo $rc->getPost()->getPostUrl(false);?>" ><?php echo $rc->getTitlePost();?></a>
+                           <div class="recent-comment-content">
+      					       <?php echo $this->getTitleComment($rc->getCommentContent(),50); ?>
+      					   </div>
+                           <div>   
+                                <span class="comment-user">
+							         <span><?php echo $rc->getUsername()?></span>
+    						   </span>
+    						   <?php $date = new DateTime($rc->getTime());?>
+    						   <span class="comment-time"><small class="time-stamp"><?php echo $date->format('M j Y'); ?></small></span>
+                           </div>
+      					</li>
+			    <?php endforeach;?>						
+			<?php else :  ?>
+				<li><p class="empty"><?php echo $this->__('No recent comment') ?></p></li>
+				<?php $i++;?>
+			<?php endif; ?>	
+		</ol>
+	</div>
+</div>
+<?php endif;?>

@@ -1,0 +1,49 @@
+.em_col_main .special_slider .products-grid li.item .price{ .changeFont(@h1_font); font-size:190%}
+.em_col_main .special_slider .products-grid li.item .product-name{ .changeFont(@h1_font); font-size:190%}
+.em_col_main .special_slider .products-grid li.item .product-name a{ font-size:100%}
+.em_col_main .special_slider .products-grid li.item button.button.btn-cart:before{ 
+	.changeIcon(30px, ~'5px -433px'); 
+	.changeAllColor(@btn1_text_color; @btn1_line_color; @btn1_bg_color; @btn1_font);
+	border-bottom-color: darken(@btn1_line_color, 15%);
+	&:hover
+	{	
+		.changeIcon(30px, ~'5px -463px');
+		.changeAllColor(@btn1_bg_color; @btn1_line_color; @btn1_text_color; @btn1_font);
+	}
+}
+.em_col_main .special_slider .products-grid li.item button.button.btn-cart{
+	.changeAllColor(@btn1_text_color; lighten(@btn1_line_color, 10%); lighten(@btn1_bg_color, 10%); @btn1_font);
+	border-bottom-color: darken(lighten(@btn1_line_color, 10%), 15%);
+	width:auto !important; height:auto !important; 
+	&:hover
+	{	
+		.changeAllColor(@btn1_bg_color; @btn1_line_color; @btn1_text_color; @btn1_font);
+	}
+}
+
+.footer_top_container .list-inline li a{
+	.changeAllColor(@footer_text_color; @footer_line_color; @footer_bg3_color);
+	&:hover{
+		.changeAllColor(@footer_text_color; @footer_text3_color; @footer_text3_color);
+		border-bottom-color:darken(@footer_text3_color, 100%);
+	}
+}
+
+.ui-slider-tabs-list-container{ .changeAllColor(@body_text_color; darken(@body_bg4_color, 20%); @body_bg4_color);}
+.ui-slider-tabs-content-container > div{ .changeBkg(@body_bg3_color;)}
+
+.wrapper_main.wrapper_main_end{ .changeAllColor(@body_text2_color; @body_line_color; @body_bg3_color);}
+.box_banner .content span.icon{ .changeBkg(darken(@body_bg4_color, 100%)); &:hover{.changeBkg(darken(@body_bg4_color, 10%));} }
+.box_banner .box-content a.view-more{ .changeColor(darken(@body_bg5_color, 100%))}
+.ui-slider-tabs-list{
+	li{
+		.changeFont(@h4_font);
+	}
+	li a{
+		.changeAllColor(lighten(@body_bg4_color, 20%); transparent; transparent); 
+	}
+	li.selected a,
+	li:hover a{
+		.changeAllColor(@body_text_color; transparent; transparent);
+	}
+}

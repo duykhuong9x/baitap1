@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <adminhtml_multidealpro_index>
+		<reference name="head">
+			<action method="addCss"><stylesheet>em/multidealpro/css/em_multidealpro.css</stylesheet></action>
+		</reference>
+
+        <reference name="content">
+            <block type="multidealpro/adminhtml_multidealpro" name="multidealpro" />
+        </reference>
+    </adminhtml_multidealpro_index>
+
+	<adminhtml_multidealpro_edit>
+		<reference name="head">
+			<action method="addCss"><stylesheet>em/multidealpro/css/em_multidealpro.css</stylesheet></action>
+			<action method="addItem"><type>skin_js</type><name>em/multidealpro/js/jquery-1.8.3.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>em/multidealpro/js/em_multidealpro.js</name></action>
+		</reference>
+	</adminhtml_multidealpro_edit>
+</layout>

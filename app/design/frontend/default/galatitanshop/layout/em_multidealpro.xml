@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+
+		<reference name="head">
+			<action method="addCss"><stylesheet>em_multidealpro/css/em_multidealpro.css</stylesheet></action>
+
+			<action method="addJs"><script>em/jquery-1.8.3.min.js</script></action>
+			<action method="addItem"><type>skin_js</type><name>em_multidealpro/js/countdown.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>em_multidealpro/js/em_multidealpro.js</name></action>
+			
+			<block type="core/template" name="em_multlidealpro_head" template="em_multidealpro/all_deals/em_head.phtml" />
+		</reference>
+
+		<!-- Mage_Checkout -->
+        <reference name="top.links">
+            <block type="multidealpro/links" name="multideal_top_link">
+                <action method="addDealLink"></action>
+            </block>
+        </reference>
+    </default>
+
+    <multidealpro_index_index>
+		<reference name="breadcrumbs">
+            <action method="addCrumb">
+                <crumbName>home</crumbName>
+                <crumbInfo><label>Home</label><title>Home</title></crumbInfo>
+            </action>
+            <action method="addCrumb">
+                <crumbName>active_deals</crumbName>
+                <crumbInfo><label>Active Deals</label><title>Active Deals</title></crumbInfo>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="multidealpro/multidealpro" name="multidealpro" />
+			<block type="multidealpro/home" name="multidealpro_homepage" template="em_multidealpro/all_deals/multideal_home.phtml" />
+        </reference>
+    </multidealpro_index_index>
+
+	<cms_index_index>
+        <reference name="content">
+            <block type="multidealpro/home" name="multidealpro_homepage" template="em_multidealpro/all_deals/cms_products.phtml" />
+        </reference>
+    </cms_index_index>
+</layout> 

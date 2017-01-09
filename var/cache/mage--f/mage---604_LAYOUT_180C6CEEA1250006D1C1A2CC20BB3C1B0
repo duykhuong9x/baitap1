@@ -1,0 +1,971 @@
+<block name="formkey" type="core/template" template="core/formkey.phtml"/>
+<label>All Pages</label>
+<block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
+   <block type="page/html_head" name="head" as="head">
+      <action method="addJs">
+         <script>prototype/prototype.js</script>
+      </action>
+      <action method="addJs">
+         <script>lib/ccard.js</script>
+      </action>
+      <action method="addJs">
+         <script>prototype/validation.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/builder.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/effects.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/dragdrop.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/controls.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/slider.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/js.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/form.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/menu.js</script>
+      </action>
+      <action method="addJs">
+         <script>mage/translate.js</script>
+      </action>
+      <action method="addJs">
+         <script>mage/cookies.js</script>
+      </action>
+      <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
+      <action method="addCss">
+         <stylesheet>css/em_cloudzoom.css</stylesheet>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/em_variation.css</stylesheet>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>css/lightbox.css</name>
+      </action>
+      <action method="addCss">
+         <stylesheet>em_megamenupro/css/menu.css</stylesheet>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/social.css</stylesheet>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/menu.css</stylesheet>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>css/styles-ie.css</name>
+         <params/>
+         <if>lt IE 8</if>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/widgets.css</stylesheet>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/print.css</stylesheet>
+         <params>media=&quot;print&quot;</params>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/animate.css</stylesheet>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/styles.css</stylesheet>
+      </action>
+      <action method="addJs">
+         <script>em/jquery-1.8.3.min.js</script>
+      </action>
+      <action method="addJs">
+         <script>em/jquery-noconflict.js</script>
+      </action>
+      <block type="core/template" name="em_variation_css" template="page/html/em_head.phtml"/>
+      <action method="addJs">
+         <script>em/jquery.ba-resize.js</script>
+      </action>
+      <action method="addJs">
+         <script>em/jquery.hoverIntent.js</script>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/jquery.social.share.2.2.min.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/jquery.ba-throttle-debounce.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>em_megamenupro/js/menu.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>em_megamenupro/js/ie7.js</name>
+         <params/>
+         <if>lt IE 8</if>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/ios-orientationchange-fix.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/colorpicker.js</name>
+         <params/>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/variation.js</name>
+      </action>
+      <action method="addJs">
+         <script>em/cloud-zoom.1.0.2.js</script>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/lightbox.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/selectUl.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/waypoints.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/smooth.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/galatitanshop.js</name>
+      </action>
+      <action method="addItem">
+         <type>js</type>
+         <name>lib/ds-sleight.js</name>
+         <params/>
+         <if>lt IE 7</if>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/ie6.js</name>
+         <params/>
+         <if>lt IE 7</if>
+      </action>
+   </block>
+   <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">
+      <label>Page Top</label>
+   </block>
+   <block type="page/html_notices" name="global_notices" as="global_notices" template="page/html/notices.phtml"/>
+   <block type="page/html_header" name="header" as="header">
+      <block type="page/template_links" name="top.links" as="topLinks"/>
+      <block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/>
+      <block type="core/text_list" name="galatitanshop.top.menu" as="topMenu" translate="label">
+         <label>Navigation Bar</label>
+         <block type="page/html_topmenu" name="galatitanshop.catalog.topnav" template="page/html/topmenu.phtml"/>
+      </block>
+      <block type="page/html_wrapper" name="top.container" as="topContainer" translate="label">
+         <label>Page Header</label>
+         <action method="setElementClass">
+            <value>top-container</value>
+         </action>
+      </block>
+      <block type="page/switch" name="store_switcher" as="store_switcher" template="page/switch/stores.phtml"/>
+      <block type="core/text_list" name="em_header_top_ad" translate="label">
+         <label>EM Header Top Ad</label>
+      </block>
+      <block type="page/html_welcome" name="welcome" as="welcome"/>
+   </block>
+   <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs" translate="label">
+      <label>Breadcrumbs</label>
+   </block>
+   <block type="core/template" name="left" as="left" translate="label" template="page/container.phtml">
+      <label>Left Column</label>
+      <action method="setData">
+         <key>wrapperClass</key>
+         <value>col-left sidebar</value>
+      </action>
+   </block>
+   <block type="core/messages" name="global_messages" as="global_messages"/>
+   <block type="core/messages" name="messages" as="messages"/>
+   <block type="core/text_list" name="content" as="content" translate="label">
+      <label>Main Content Area</label>
+   </block>
+   <block type="core/template" name="right" as="right" translate="label" template="page/container.phtml">
+      <label>Right Column</label>
+      <action method="setData">
+         <key>wrapperClass</key>
+         <value>col-right sidebar</value>
+      </action>
+   </block>
+   <block type="page/html_footer" name="footer" as="footer" template="page/html/footer.phtml">
+      <block type="page/html_wrapper" name="bottom.container" as="bottomContainer" translate="label">
+         <label>Page Footer</label>
+      </block>
+   </block>
+   <block type="core/text_list" name="before_body_end" as="before_body_end" translate="label">
+      <label>Page Bottom</label>
+      <block type="page/switch" name="store_switcher" as="store_switcher" template="page/switch/stores_variation.phtml"/>
+      <block type="core/template" name="color_variation" as="color_variation" template="page/html/color_variation.phtml"/>
+      <block type="core/template" name="em_variation_tpl" template="page/html/em_variation.phtml"/>
+      <block type="core/template" name="mobile_view" template="page/html/qrcode.phtml"/>
+      <block type="page/html_cookieNotice" name="global_cookie_notice" as="global_cookie_notice" template="page/html/cookienotice.phtml" before="-"/>
+   </block>
+   <block type="core/text_list" name="em_areasearch" translate="label">
+      <label>EM Area Search</label>
+   </block>
+   <block type="core/text_list" name="em_areacart" translate="label">
+      <label>EM Area Top Cart</label>
+   </block>
+   <block type="core/text_list" name="em_area1" translate="label">
+      <label>EM Area 01</label>
+   </block>
+   <block type="core/text_list" name="em_area2" translate="label">
+      <label>EM Area 02</label>
+   </block>
+   <block type="core/text_list" name="em_area3" translate="label">
+      <label>EM Area 03</label>
+   </block>
+   <block type="core/text_list" name="em_area4" translate="label">
+      <label>EM Area 04</label>
+   </block>
+   <block type="core/text_list" name="em_area5" translate="label">
+      <label>EM Area 05</label>
+   </block>
+   <block type="core/text_list" name="em_area6" translate="label">
+      <label>EM Area 06</label>
+   </block>
+   <block type="core/text_list" name="em_area7" translate="label">
+      <label>EM Area 07</label>
+   </block>
+   <block type="core/text_list" name="em_area8" translate="label">
+      <label>EM Area 08</label>
+   </block>
+   <block type="core/text_list" name="em_area9" translate="label">
+      <label>EM Area 09</label>
+   </block>
+   <block type="core/text_list" name="em_area10" translate="label">
+      <label>EM Area 10</label>
+   </block>
+   <block type="core/text_list" name="em_area11" translate="label">
+      <label>EM Area 11</label>
+   </block>
+   <block type="core/text_list" name="em_area12" translate="label">
+      <label>EM Area 12</label>
+   </block>
+   <block type="core/text_list" name="em_area13" translate="label">
+      <label>EM Area 13</label>
+   </block>
+   <block type="core/text_list" name="em_area14" translate="label">
+      <label>EM Area 14</label>
+   </block>
+   <block type="core/text_list" name="em_area15" translate="label">
+      <label>EM Area 15</label>
+   </block>
+   <block type="core/text_list" name="em_area16" translate="label">
+      <label>EM Area 16</label>
+   </block>
+   <block type="core/text_list" name="em_area17" translate="label">
+      <label>EM Area 17</label>
+   </block>
+   <block type="core/text_list" name="em_area18" translate="label">
+      <label>EM Area 18</label>
+   </block>
+   <block type="core/text_list" name="em_area19" translate="label">
+      <label>EM Area 19</label>
+   </block>
+   <block type="core/text_list" name="em_area20" translate="label">
+      <label>EM Area 20</label>
+   </block>
+   <block type="core/text_list" name="em_area21" translate="label">
+      <label>EM Area 21</label>
+   </block>
+   <block type="core/text_list" name="em_area22" translate="label">
+      <label>EM Area 22</label>
+   </block>
+   <block type="core/text_list" name="em_area23" translate="label">
+      <label>EM Area 23</label>
+   </block>
+   <block type="core/text_list" name="em_area24" translate="label">
+      <label>EM Area 24</label>
+   </block>
+   <block type="core/text_list" name="em_area25" translate="label">
+      <label>EM Area 25</label>
+   </block>
+   <block type="core/text_list" name="em_area26" translate="label">
+      <label>EM Area 26</label>
+   </block>
+   <block type="core/text_list" name="em_area27" translate="label">
+      <label>EM Area 27</label>
+   </block>
+   <block type="core/text_list" name="em_area28" translate="label">
+      <label>EM Area 28</label>
+   </block>
+   <block type="core/text_list" name="em_area29" translate="label">
+      <label>EM Area 29</label>
+   </block>
+   <block type="core/text_list" name="em_area30" translate="label">
+      <label>EM Area 30</label>
+   </block>
+   <block type="core/text_list" name="em_area31" translate="label">
+      <label>EM Area 31</label>
+   </block>
+   <block type="core/text_list" name="em_area32" translate="label">
+      <label>EM Area 32</label>
+   </block>
+   <block type="core/text_list" name="em_area33" translate="label">
+      <label>EM Area 33</label>
+   </block>
+   <block type="core/text_list" name="em_area34" translate="label">
+      <label>EM Area 34</label>
+   </block>
+   <block type="core/text_list" name="em_area35" translate="label">
+      <label>EM Area 35</label>
+   </block>
+   <block type="core/text_list" name="em_area36" translate="label">
+      <label>EM Area 36</label>
+   </block>
+   <block type="core/text_list" name="em_area37" translate="label">
+      <label>EM Area 37</label>
+   </block>
+   <block type="core/text_list" name="em_area38" translate="label">
+      <label>EM Area 38</label>
+   </block>
+   <block type="core/text_list" name="em_area39" translate="label">
+      <label>EM Area 39</label>
+   </block>
+   <block type="core/text_list" name="em_area40" translate="label">
+      <label>EM Area 40</label>
+   </block>
+   <block type="core/text_list" name="em_area41" translate="label">
+      <label>EM Area 41</label>
+   </block>
+   <block type="core/text_list" name="em_area42" translate="label">
+      <label>EM Area 42</label>
+   </block>
+   <block type="core/text_list" name="em_area43" translate="label">
+      <label>EM Area 43</label>
+   </block>
+   <block type="core/text_list" name="em_area44" translate="label">
+      <label>EM Area 44</label>
+   </block>
+   <block type="core/text_list" name="em_area45" translate="label">
+      <label>EM Area 45</label>
+   </block>
+   <block type="core/text_list" name="em_area46" translate="label">
+      <label>EM Area 46</label>
+   </block>
+   <block type="core/text_list" name="em_area47" translate="label">
+      <label>EM Area 47</label>
+   </block>
+   <block type="core/text_list" name="em_area48" translate="label">
+      <label>EM Area 48</label>
+   </block>
+   <block type="core/text_list" name="em_area49" translate="label">
+      <label>EM Area 49</label>
+   </block>
+</block>
+<block type="core/profiler" output="toHtml" name="core_profiler"/>
+<reference name="head">
+   <block type="core/template" name="optional_zip_countries" as="optional_zip_countries" template="directory/js/optional_zip_countries.phtml"/>
+</reference>
+<reference name="header">
+   <block type="directory/currency" name="currency" template="directory/currency.phtml"/>
+</reference>
+<reference name="footer">
+   <block type="cms/block" name="cms_footer_links" before="footer_links">
+      <action method="setBlockId">
+         <block_id>galatitanshop_footer_links</block_id>
+      </action>
+   </block>
+</reference>
+<reference name="header">
+   <block type="checkout/cart_sidebar" name="cart_sidebar_top" as="cart_sidebar_top" template="checkout/cart/top_sidebar.phtml">
+      <action method="addItemRender">
+         <type>simple</type>
+         <block>checkout/cart_item_renderer</block>
+         <template>checkout/cart/sidebar/top_default.phtml</template>
+      </action>
+      <action method="addItemRender">
+         <type>grouped</type>
+         <block>checkout/cart_item_renderer_grouped</block>
+         <template>checkout/cart/sidebar/top_default.phtml</template>
+      </action>
+      <action method="addItemRender">
+         <type>configurable</type>
+         <block>checkout/cart_item_renderer_configurable</block>
+         <template>checkout/cart/sidebar/top_default.phtml</template>
+      </action>
+      <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout">
+         <label>Shopping Cart Sidebar Extra Actions</label>
+      </block>
+   </block>
+</reference>
+<reference name="top.links">
+   <action method="addLink" translate="label title" module="customer">
+      <label>My Account</label>
+      <url helper="customer/getAccountUrl"/>
+      <title>My Account</title>
+      <prepare/>
+      <urlParams/>
+      <position>10</position>
+   </action>
+</reference>
+<reference name="left">
+   <block type="catalog/product_compare_sidebar" after="catalog.leftnav" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" module="catalog" ifconfig="catalog/seo/site_map">
+      <label>Site Map</label>
+      <url helper="catalog/map/getCategoryUrl"/>
+      <title>Site Map</title>
+   </action>
+</reference>
+<block type="catalog/product_price_template" name="catalog_product_price_template"/>
+<reference name="catalog_product_price_template">
+   <action method="addPriceBlockType">
+      <type>msrp</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp.phtml</template>
+   </action>
+   <action method="addPriceBlockType">
+      <type>msrp_item</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp_item.phtml</template>
+   </action>
+   <action method="addPriceBlockType">
+      <type>msrp_noform</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp_noform.phtml</template>
+   </action>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" module="catalogsearch" ifconfig="catalog/seo/search_terms">
+      <label>Search Terms</label>
+      <url helper="catalogsearch/getSearchTermUrl"/>
+      <title>Search Terms</title>
+   </action>
+   <action method="addLink" translate="label title" module="catalogsearch">
+      <label>Advanced Search</label>
+      <url helper="catalogsearch/getAdvancedSearchUrl"/>
+      <title>Advanced Search</title>
+   </action>
+</reference>
+<reference name="footer_links">
+   <block type="sales/guest_links" name="return_link"/>
+   <action method="addLinkBlock">
+      <blockName>return_link</blockName>
+   </action>
+</reference>
+<reference name="top.links">
+   <block type="checkout/links" name="checkout_cart_link">
+      <action method="addCartLink"/>
+      <action method="addCheckoutLink"/>
+   </block>
+</reference>
+<reference name="em_areacart">
+   <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/top_sidebar.phtml">
+      <action method="addItemRender">
+         <type>simple</type>
+         <block>checkout/cart_item_renderer</block>
+         <template>checkout/cart/sidebar/default.phtml</template>
+      </action>
+      <action method="addItemRender">
+         <type>grouped</type>
+         <block>checkout/cart_item_renderer_grouped</block>
+         <template>checkout/cart/sidebar/default.phtml</template>
+      </action>
+      <action method="addItemRender">
+         <type>configurable</type>
+         <block>checkout/cart_item_renderer_configurable</block>
+         <template>checkout/cart/sidebar/default.phtml</template>
+      </action>
+      <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout">
+         <label>Shopping Cart Sidebar Extra Actions</label>
+      </block>
+   </block>
+</reference>
+<reference name="topCart.extra_actions">
+   <block type="paypal/express_shortcut" name="paypal.partner.top_cart.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="cart_sidebar.extra_actions">
+   <block type="paypal/express_shortcut" name="paypal.partner.cart_sidebar.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="right">
+   <block type="poll/activePoll" name="right.poll" after="catalog.leftnav">
+      <action method="setPollTemplate">
+         <template>poll/active.phtml</template>
+         <type>poll</type>
+      </action>
+      <action method="setPollTemplate">
+         <template>poll/result.phtml</template>
+         <type>results</type>
+      </action>
+   </block>
+</reference>
+<reference name="right">
+   <block type="tag/popular" name="tags_popular" template="tag/popular.phtml"/>
+</reference>
+<reference name="right">
+   <block type="reports/product_viewed" before="right.permanent.callout" name="right.reports.product.viewed" template="reports/product_viewed.phtml"/>
+   <block type="reports/product_compared" before="right.permanent.callout" name="right.reports.product.compared" template="reports/product_compared.phtml"/>
+</reference>
+<reference name="head" before="-">
+   <block type="googleanalytics/ga" name="google_analytics" as="google_analytics" template="googleanalytics/ga.phtml"/>
+</reference>
+<reference name="top.links">
+   <block type="wishlist/links" name="wishlist_link"/>
+   <action method="addLinkBlock">
+      <blockName>wishlist_link</blockName>
+   </action>
+</reference>
+<reference name="left">
+   <block type="wishlist/customer_sidebar" name="wishlist_sidebar" as="wishlist" template="wishlist/sidebar.phtml"/>
+</reference>
+<reference name="topCart.extra_actions">
+   <block type="paypaluk/express_shortcut" name="paypaluk.partner.top_cart.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="cart_sidebar.extra_actions">
+   <block type="paypaluk/express_shortcut" name="paypaluk.partner.cart_sidebar.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" module="contacts" ifconfig="contacts/contacts/enabled">
+      <label>Contact Us</label>
+      <url>contacts</url>
+      <title>Contact Us</title>
+      <prepare>true</prepare>
+   </action>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" module="rss" ifconfig="rss/config/active">
+      <label>RSS</label>
+      <url>rss</url>
+      <title>RSS</title>
+      <prepare>true</prepare>
+      <urlParams/>
+      <position/>
+      <li/>
+      <a>class=&quot;link-rss&quot;</a>
+   </action>
+</reference>
+<block type="rss/list" name="head_rss" ifconfig="rss/config/active"/>
+<reference name="cart_sidebar">
+   <action method="addItemRender">
+      <type>bundle</type>
+      <block>bundle/checkout_cart_item_renderer</block>
+      <template>checkout/cart/sidebar/default.phtml</template>
+   </action>
+</reference>
+<reference name="wishlist_sidebar">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="catalog_product_price_template">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="footer_links">
+   <block type="blog/blog" name="add.blog.footer">
+      <action method="addBlogLink" ifconfig="blog/menu/footer">
+         <param>footer</param>
+      </action>
+   </block>
+</reference>
+<reference name="right">
+   <block type="blog/menu_sidebar" name="right.blog.menu" before="-">
+      <action method="setTemplate" ifconfig="blog/menu/right" ifvalue="1">
+         <template>aw_blog/menu.phtml</template>
+      </action>
+      <block type="blog/tags" name="blog_tags"/>
+   </block>
+</reference>
+<reference name="left">
+   <block type="blog/menu_sidebar" name="left.blog.menu" before="-">
+      <action method="setTemplate" ifconfig="blog/menu/left">
+         <template>aw_blog/menu.phtml</template>
+      </action>
+      <block type="blog/tags" name="blog_tags"/>
+   </block>
+</reference>
+<reference name="top.links">
+   <block type="blog/blog" name="add.blog.link">
+      <action method="addBlogLink" ifconfig="blog/menu/top">
+         <param>top</param>
+      </action>
+   </block>
+</reference>
+<reference name="head">
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>aw_blog/css/style.css</name>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <stylesheet>em/ajaxcart/css/em_ajaxcart.css</stylesheet>
+   </action>
+   <action method="addJs">
+      <script>varien/product.js</script>
+   </action>
+   <action method="addJs">
+      <script>varien/configurable.js</script>
+   </action>
+   <action method="addJs">
+      <script>calendar/calendar.js</script>
+   </action>
+   <action method="addJs">
+      <script>calendar/calendar-setup.js</script>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/bundle.js</name>
+   </action>
+   <action method="addJs">
+      <script>em/jquery-1.8.3.min.js</script>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em/jquery.form.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em/ajaxcart/js/lightbox.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em/ajaxcart/js/em_ajaxcart.js</name>
+   </action>
+   <block type="core/template" name="em_ajaxcart_head" template="em_ajaxcart/em_head.phtml"/>
+</reference>
+<reference name="before_body_end">
+   <block type="core/template" name="ajax.cart" template="em_ajaxcart/contanier.phtml"/>
+</reference>
+<reference name="head">
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>ajaxproducts/isotope.css</name>
+   </action>
+   <action method="addJs">
+      <script>em/jquery-1.8.3.min.js</script>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>ajaxproducts/jquery.isotope.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>ajaxproducts/jquery.infinitescroll.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>ajaxproducts/behaviors/manual-trigger.js</name>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <stylesheet>em_megamenupro/css/menu.css</stylesheet>
+   </action>
+   <action method="addJs">
+      <script>em/jquery.ba-hashchange.min.js</script>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em_megamenupro/js/menu.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em_megamenupro/js/ie7.js</name>
+      <params/>
+      <if>lt IE 8</if>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <stylesheet>em_multidealpro/css/em_multidealpro.css</stylesheet>
+   </action>
+   <action method="addJs">
+      <script>em/jquery-1.8.3.min.js</script>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em_multidealpro/js/countdown.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em_multidealpro/js/em_multidealpro.js</name>
+   </action>
+   <block type="core/template" name="em_multlidealpro_head" template="em_multidealpro/all_deals/em_head.phtml"/>
+</reference>
+<reference name="top.links">
+   <block type="multidealpro/links" name="multideal_top_link">
+      <action method="addDealLink"/>
+   </block>
+</reference>
+<reference name="head">
+   <block type="productlabels/css" name="labels.css"/>
+   <action method="addCss">
+      <stylesheet>css/em_productlabels.css</stylesheet>
+   </action>
+</reference>
+<reference name="head">
+   <block type="page/html" name="top.Js" as="topJs" template="em_quickshop/page/html/jshead.phtml"/>
+   <action method="addCss">
+      <stylesheet>css/em_quickshop.css</stylesheet>
+   </action>
+   <action method="addCss">
+      <stylesheet>css/fancybox/jquery.fancybox.css</stylesheet>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/fancybox/jquery.fancybox.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/fancybox/jquery.mousewheel-3.0.6.pack.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/em_quickshop.js</name>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>sliderwidget/csslider.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>sliderwidget/hammer.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>sliderwidget/csslider_1.1.js</name>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <stylesheet>em_slideshow2/css/settings.css</stylesheet>
+   </action>
+   <action method="addCss">
+      <stylesheet>em_slideshow2/css/captions.css</stylesheet>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em_slideshow2/js/jquery.themepunch.plugins.min.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em_slideshow2/js/jquery.themepunch.revolution.min.js</name>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <name>emtabs/css/jquery.sliderTabs.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>emtabs/js/jquery.sliderTabs.js</name>
+   </action>
+</reference>
+<reference name="galatitanshop.top.menu">
+   <block type="megamenupro/megamenupro" name="db6e538130c4f4f8978cc3ccee64c564">
+      <action method="setData">
+         <name>menu</name>
+         <value>6</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_header_top_ad">
+   <block type="cmswidget/widget_block" name="969b4db8ebaca81db75d2993610d44f8">
+      <action method="setData">
+         <name>block_id</name>
+         <value>24</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area1">
+   <block type="cmswidget/widget_block" name="65504f798d715558247906e209cc8c2e">
+      <action method="setData">
+         <name>block_id</name>
+         <value>25</value>
+      </action>
+   </block>
+</reference>
+<reference name="bottom.container">
+   <block type="cmswidget/widget_block" name="e927516bfab58856dec87b515bc67a4e">
+      <action method="setData">
+         <name>block_id</name>
+         <value>13</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_areasearch">
+   <block type="cmswidget/widget_block" name="fc9ddcd8e19887b3830f356d4f3e248b">
+      <action method="setData">
+         <name>block_id</name>
+         <value>26</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area3">
+   <block type="cmswidget/widget_block" name="8ba22c1336c46c120d37c52ae7b1138a">
+      <action method="setData">
+         <name>block_id</name>
+         <value>10</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>block block-03-ads</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area4">
+   <block type="sliderwidget/slide" name="0c71214f6f522ed128ac9af98aa3830a">
+      <action method="setData">
+         <name>instance</name>
+         <value>12</value>
+      </action>
+      <action method="setData">
+         <name>direction</name>
+         <value>0</value>
+      </action>
+      <action method="setData">
+         <name>container</name>
+         <value>#footer-brands-slider ul</value>
+      </action>
+      <action method="setData">
+         <name>auto_sliding</name>
+         <value>1000</value>
+      </action>
+      <action method="setData">
+         <name>circular</name>
+         <value>1</value>
+      </action>
+      <action method="setData">
+         <name>items_per_slide</name>
+         <value>1</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area5">
+   <block type="cmswidget/widget_block" name="964ff146b9b0cf64f1ffc5757ef4df8b">
+      <action method="setData">
+         <name>block_id</name>
+         <value>15</value>
+      </action>
+   </block>
+</reference>
+<reference name="head">
+   <action method="addItem" ifconfig="sales/msrp/enabled">
+      <type>skin_js</type>
+      <name>js/msrp.js</name>
+   </action>
+</reference>
+<reference name="content">
+   <block type="core/template" template="catalog/msrp/popup.phtml" name="product.tooltip"/>
+</reference>
+<update handle="MAP_popup"/>
+<label>Quick Search Form</label>
+<reference name="root">
+   <action method="setTemplate">
+      <template>page/2columns-left.phtml</template>
+   </action>
+</reference>
+<reference name="left">
+   <block type="catalogsearch/layer" name="catalogsearch.leftnav" before="-" template="catalog/layer/view.phtml"/>
+</reference>
+<reference name="content">
+   <block type="catalogsearch/result" name="search.result" template="catalogsearch/result.phtml">
+      <block type="catalog/product_list" name="search_result_list" template="catalog/product/list.phtml">
+         <block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+            <block type="page/html_pager" name="product_list_toolbar_pager"/>
+         </block>
+         <action method="addColumnCountLayoutDepend">
+            <layout>empty</layout>
+            <count>6</count>
+         </action>
+         <action method="addColumnCountLayoutDepend">
+            <layout>one_column</layout>
+            <count>5</count>
+         </action>
+         <action method="addColumnCountLayoutDepend">
+            <layout>two_columns_left</layout>
+            <count>4</count>
+         </action>
+         <action method="addColumnCountLayoutDepend">
+            <layout>two_columns_right</layout>
+            <count>4</count>
+         </action>
+         <action method="addColumnCountLayoutDepend">
+            <layout>three_columns</layout>
+            <count>3</count>
+         </action>
+         <action method="setToolbarBlockName">
+            <name>product_list_toolbar</name>
+         </action>
+      </block>
+      <action method="setListOrders"/>
+      <action method="setListModes"/>
+      <action method="setListCollection"/>
+   </block>
+</reference>
+<reference name="product.tooltip">
+   <block type="page/html_wrapper" name="product.info.addtocart.paypal.wrapper" translate="label">
+      <block type="paypal/express_shortcut" name="product.info.addtocart.paypal" template="paypal/express/shortcut.phtml">
+         <action method="setIsInCatalogProduct">
+            <value>1</value>
+         </action>
+         <action method="setShowOrPosition">
+            <value>after</value>
+         </action>
+      </block>
+   </block>
+</reference>
+<update handle="SHORTCUT_popup"/>
+<reference name="product.tooltip">
+   <block type="page/html_wrapper" name="product.info.addtocart.paypaluk.wrapper" translate="label">
+      <block type="paypaluk/express_shortcut" name="product.info.addtocart.paypaluk" template="paypal/express/shortcut.phtml">
+         <action method="setIsInCatalogProduct">
+            <value>1</value>
+         </action>
+         <action method="setShowOrPosition">
+            <value>after</value>
+         </action>
+      </block>
+   </block>
+</reference>
+<update handle="SHORTCUT_uk_popup"/>
+<reference name="search_result_list">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="top.links">
+   <action method="addLink" translate="label title" module="customer">
+      <label>Log In</label>
+      <url helper="customer/getLoginUrl"/>
+      <title>Log In</title>
+      <prepare/>
+      <urlParams/>
+      <position>100</position>
+   </action>
+</reference>
+<remove name="reorder"/>
+<reference name="right">
+   <block type="sales/reorder_sidebar" name="sale.reorder.sidebar" as="reorder" template="sales/reorder/sidebar.phtml"/>
+</reference>

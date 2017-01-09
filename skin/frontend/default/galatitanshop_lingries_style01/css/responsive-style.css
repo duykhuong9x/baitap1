@@ -1,0 +1,40 @@
+@media (min-width: 768px){
+
+	.em_nav li:hover > a.arrow { background-image: url(../images/icon-nav-hover-1.png);}
+	.em_nav .nav-right li:hover > a.arrow { background-image: url(../images/icon-nav-right-hover-1.png);}
+	.cms-index-index .menuleft #menu-default{ position:absolute}
+}
+/* Mobile view */
+@media (max-width:767px) {
+	
+	.em_nav li:hover > a.arrow { background-image: url(../images/m-icon-nav-hover-1.png)}
+	.menu-item-depth-0 > .em-catalog-navigation > li.parent:hover > a.arrow,
+	.menu-item-depth-0.menu-item-parent:hover > a.arrow{
+		background-image: url(../images/m-icon-nav-hover.png);
+	}
+}
+
+@media (min-width: 980px){
+	.one-column .em_col_main .products-grid li.item .big-img .block-related li{ float:left; width:130px; margin-right:0; clear:both}
+	.one-column .em_col_main .products-grid li.item .big-img .block-related li img{ width:130px; height:auto}
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+	.em_col_main .products-grid li.item .big-img > .product-image{ width:318px}
+	.em_col_main .products-grid li.item .big-img > .product-image img{ width:100%; height:auto}
+	.cms-index-index .menuleft #menu-default{ width:225px}
+}
+@media (min-width: 768px) and (max-width: 990px) {
+	.em_col_main .products-grid li.item .big-img > .product-image{ width:100%}
+	.em_col_main .products-grid li.item .big-img > .product-image img{ width:100%; height:auto}
+	.em_col_main .products-grid li.item .big-img .block-related{ width:100%}
+	.em_col_main .products-grid li.item .big-img .block-related li{ float:left; width:31%; margin-right:2%}
+	.em_col_main .products-grid li.item .big-img .block-related li img{ width:100%; height:auto}
+	.cms-index-index .menuleft #menu-default{ width:170px}
+}
+@media (max-width: 590px) {
+	.em_col_main .products-grid li.item .big-img > .product-image{ width:100%}
+	.em_col_main .products-grid li.item .big-img > .product-image img{ width:100%; height:auto}
+	.em_col_main .products-grid li.item .big-img .block-related{ width:100%}
+	.em_col_main .products-grid li.item .big-img .block-related li{ float:left; width:31%; margin-right:2%}
+	.em_col_main .products-grid li.item .big-img .block-related li img{ width:100%; height:auto}
+}

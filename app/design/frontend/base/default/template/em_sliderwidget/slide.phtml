@@ -1,0 +1,43 @@
+<?php
+	
+	$helper = Mage::helper('cms');
+    $processor = $helper->getBlockTemplateProcessor();
+	$idJs = "slide_".md5(uniqid(rand()));
+	$classJsUl = $idJs."-ul";
+	
+	if ($this->getData('slider_unique_id'))
+		$idJs = $this->getData('slider_unique_id');
+	$this->idJs = $idJs;
+		
+?>
+<div id="<?php echo $idJs;?>" class="slider_container<?php if($cssClass = $this->getData('css_class')):?> <?php echo $cssClass;?><?php endif;?>">
+	<?php echo $processor->filter($this->getWidgetInstance());?>
+	<div id="<?php echo $idJs;?>_css"></div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+//jQuery(window).load(function(){
+function em_slider_init_widget_<?php echo $idJs ?>(){
+	/*if(!jQuery('#<?php echo $idJs;?>').hasClass('deal_of_the_day'))
+		return '';*/
+	if(jQuery('<?php echo $this->getSelector();?>').length){
+		jQuery('<?php echo $this->getSelector();?>').addClass('slides');
+		jQuery('<?php echo $this->getSelector();?>').parent().csslider({
+			selector : ".slides > li.item"
+			<?php if($this->getData('circular')):?>,circular : <?php echo $this->getData('circular')?><?php endif;?>
+			<?php if((int)$this->getData('direction')):?>,direction : 'vertical'<?php endif; ?>
+			<?php if($this->getData('auto_sliding')):?>,delay:<?php echo $this->getData('auto_sliding');?><?php endif;?>
+			<?php if($this->getData('items_per_slide')):?>,move:<?php echo $this->getData('items_per_slide');?><?php endif;?>
+			<?php if($this->getData('slider_width')):?>,widthViewport:<?php echo $this->getData('slider_width');?><?php endif;?>
+			<?php if($this->getData('slider_height')):?>,heightViewport:<?php echo $this->getData('slider_height');?><?php endif;?>
+		});
+	}  
+}
+
+jQuery(window).load(function($) {
+	em_slider_init_widget_<?php echo $idJs ?>();
+});
+//});
+//]]>
+</script>

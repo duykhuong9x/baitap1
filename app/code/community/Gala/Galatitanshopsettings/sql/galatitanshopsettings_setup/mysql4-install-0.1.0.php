@@ -1,0 +1,74 @@
+<?php
+$installer = $this;
+Mage::helper('galatitanshopsettings/sample')->importSampleData($installer);
+
+$helper = Mage::helper('galatitanshopsettings');
+$block = Mage::getModel('cms/block');
+$stores = array(0);
+$prefixBlock = 'galatitanshop_';
+
+$widgetInstance = Mage::getModel('widget/widget_instance');
+$package_theme  = 'default/galatitanshop';
+
+function galatitanshop_install_fix_widget_block_id(&$widget, $block_id) {
+	$params = unserialize($widget['widget_parameters']);
+	$params['block_id'] = $block_id;
+	$widget['widget_parameters'] = serialize($params);
+}
+####################################################################################################
+# ADD MEGAMENU PRO
+####################################################################################################  
+# create menu of theme Gala Mrhandsome Horizontal
+$model = Mage::getModel('galatitanshopsettings/megamenupro');
+$model->setData(array(
+	'name' => "Gala TitanShop Sample Vertical Menu Left",
+	'type' => "1",
+	'content' => <<<EOB
+a:47:{i:0;a:5:{s:4:"type";s:4:"text";s:4:"text";s:128:"e3t3aWRnZXQgdHlwZT0ibWVnYW1lbnVwcm8vY2F0YWxvZ25hdmlnYXRpb24iIGNhdGVnb3J5X2lkPSJjYXRlZ29yeS8xOCIgZGlyZWN0aW9uPSJ2ZXJ0aWNhbCJ9fQ==";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"0";}i:1;a:8:{s:4:"type";s:4:"link";s:5:"label";s:8:"1 Column";s:8:"sublabel";s:0:"";s:3:"url";s:37:"{{store direct_url=''}}furniture.html";s:6:"target";s:0:"";s:9:"css_class";s:12:"dd-menu-link";s:13:"container_css";s:0:"";s:5:"depth";s:1:"0";}i:2;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 1";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"1";}i:3;a:8:{s:4:"type";s:4:"link";s:5:"label";s:8:"Link 1.1";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}i:4;a:8:{s:4:"type";s:4:"link";s:5:"label";s:8:"Link 1.2";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}i:5;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 2";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"1";}i:6;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 3";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"1";}i:7;a:8:{s:4:"type";s:4:"link";s:5:"label";s:9:"2 Columns";s:8:"sublabel";s:0:"";s:3:"url";s:39:"{{store direct_url=''}}electronics.html";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"0";}i:8;a:7:{s:4:"type";s:4:"hbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:19:"col-menu menu_col10";s:13:"container_css";s:0:"";s:5:"depth";s:1:"1";}i:9;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:9:"col-sm-12";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}i:10;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 1";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:11;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 2";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:12;a:5:{s:4:"type";s:4:"text";s:4:"text";s:240:"VGhpcyBpcyBzYW1wbGUgY29udGVudCBvZiAiVGV4dCIgbWVudSBpdGVtLiBZb3UgY2FuIGVudGVyIHlvdXIgb3duIHRleHQgaGVyZS4gSXQgc3VwcG9ydHMgPHN0cm9uZz5XWVNJV1lHIEVkaXRvcjwvc3Ryb25nPiBhcyB3ZWxsIGFzIDxlbT5tYWdlbnRvIGRpcmVjdGl2ZTwvZW0+IChibG9jaywgd2lkZ2V0Li4uKQo=";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:13;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:9:"col-sm-12";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}i:14;a:5:{s:4:"type";s:4:"text";s:4:"text";s:240:"VGhpcyBpcyBzYW1wbGUgY29udGVudCBvZiAiVGV4dCIgbWVudSBpdGVtLiBZb3UgY2FuIGVudGVyIHlvdXIgb3duIHRleHQgaGVyZS4gSXQgc3VwcG9ydHMgPHN0cm9uZz5XWVNJV1lHIEVkaXRvcjwvc3Ryb25nPiBhcyB3ZWxsIGFzIDxlbT5tYWdlbnRvIGRpcmVjdGl2ZTwvZW0+IChibG9jaywgd2lkZ2V0Li4uKQ==";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:15;a:8:{s:4:"type";s:4:"link";s:5:"label";s:9:"3 Columns";s:8:"sublabel";s:0:"";s:3:"url";s:35:"{{store direct_url=''}}apparel.html";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"0";}i:16;a:7:{s:4:"type";s:4:"hbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:27:"col-menu menu_col16 fix-top";s:13:"container_css";s:0:"";s:5:"depth";s:1:"1";}i:17;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:8:"col-sm-8";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}i:18;a:5:{s:4:"type";s:4:"text";s:4:"text";s:304:"PGgzPkZpcnN0IENvbHVtbiBjb250YWlucyBvbmx5IGl0ZW0gIlRleHQiPC9oMz4KVGhpcyBpcyBzYW1wbGUgY29udGVudCBvZiAiVGV4dCIgbWVudSBpdGVtLiBZb3UgY2FuIGVudGVyIHlvdXIgb3duIHRleHQgaGVyZS4gSXQgc3VwcG9ydHMgPHN0cm9uZz5XWVNJV1lHIEVkaXRvcjwvc3Ryb25nPiBhcyB3ZWxsIGFzIDxlbT5tYWdlbnRvIGRpcmVjdGl2ZTwvZW0+IChibG9jaywgd2lkZ2V0Li4uKQ==";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:19;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:8:"col-sm-8";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}i:20;a:5:{s:4:"type";s:4:"text";s:4:"text";s:340:"PGgzPlNlY29uZCBDb2x1bW48L2gzPgo8cD5UaGlzIGlzIHNhbXBsZSBjb250ZW50IG9mICJUZXh0IiBtZW51IGl0ZW0uIFlvdSBjYW4gZW50ZXIgeW91ciBvd24gdGV4dCBoZXJlLiBJdCBzdXBwb3J0cyA8c3Ryb25nPldZU0lXWUcgRWRpdG9yPC9zdHJvbmc+IGFzIHdlbGwgYXMgPGVtPm1hZ2VudG8gZGlyZWN0aXZlPC9lbT4gKGJsb2NrLCB3aWRnZXQuLi4pPC9wPgo8cD5CZWxvdyBpcyAyIDxzdHJvbmc+TGluazwvc3Ryb25nPiBpdGVtczo8L3A+";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:21;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 1";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:22;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 2";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:23;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:18:"col-sm-8 nav-right";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}i:24;a:5:{s:4:"type";s:4:"text";s:4:"text";s:360:"PGgzPjNyZCBDb2x1bW48L2gzPgo8cD5CZWxvdyBpcyA8Y29kZT57IHt3aWRnZXQgdHlwZT0ibWVnYW1lbnVwcm8vY2F0YWxvZ25hdmlnYXRpb24iIGNhdGVnb3J5X2lkPSJjYXRlZ29yeS8zIiBkaXJlY3Rpb249InZlcnRpY2FsIn0gfTwvY29kZT48L3A+Cnt7d2lkZ2V0IHR5cGU9Im1lZ2FtZW51cHJvL2NhdGFsb2duYXZpZ2F0aW9uIiBjYXRlZ29yeV9pZD0iY2F0ZWdvcnkvMyIgZGlyZWN0aW9uPSJ2ZXJ0aWNhbCJ9fQo8cD5CZWxvdyBpcyBzdGF0aWMgbGlua3M6PC9wPg==";s:9:"css_class";s:9:"menu-link";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:25;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 1";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:26;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 2";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:27;a:8:{s:4:"type";s:4:"link";s:5:"label";s:13:"Mixed Columns";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"0";}i:28;a:7:{s:4:"type";s:4:"hbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:27:"col-menu menu_col15 fix-top";s:13:"container_css";s:0:"";s:5:"depth";s:1:"1";}i:29;a:7:{s:4:"type";s:4:"hbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}i:30;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:9:"col-sm-8 ";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:31;a:5:{s:4:"type";s:4:"text";s:4:"text";s:372:"PHA+PHN0cm9uZz5Db2x1bW4gd2lkdGggPSAyNTBweDwvc3Ryb25nPjwvcD4KCjxwPlRoaXMgaXMgc2FtcGxlIGNvbnRlbnQgb2YgIlRleHQiIG1lbnUgaXRlbS4gWW91IGNhbiBlbnRlciB5b3VyIG93biB0ZXh0IGhlcmUuIEl0IHN1cHBvcnRzIDxzdHJvbmc+V1lTSVdZRyBFZGl0b3I8L3N0cm9uZz4gYXMgd2VsbCBhcyA8ZW0+bWFnZW50byBkaXJlY3RpdmU8L2VtPiAoYmxvY2ssIHdpZGdldC4uLik8L3A+CjxwPkJlbG93IGlzIDIgPHN0cm9uZz5MaW5rPC9zdHJvbmc+IGl0ZW1zOjwvcD4K";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"4";}i:32;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 1";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"4";}i:33;a:8:{s:4:"type";s:4:"link";s:5:"label";s:6:"Link 2";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"4";}i:34;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:8:"col-sm-8";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:35;a:5:{s:4:"type";s:4:"text";s:4:"text";s:352:"PHA+PHN0cm9uZz5Db2x1bW4gd2lkdGggPSAyNTBweDwvc3Ryb25nPjwvcD4KCjxwPkJlbG93IGlzIDxjb2RlPnsge3dpZGdldCB0eXBlPSJtZWdhbWVudXByby9jYXRhbG9nbmF2aWdhdGlvbiIgY2F0ZWdvcnlfaWQ9ImNhdGVnb3J5LzMiIGRpcmVjdGlvbj0idmVydGljYWwifSB9PC9jb2RlPjwvcD4Ke3t3aWRnZXQgdHlwZT0ibWVnYW1lbnVwcm8vY2F0YWxvZ25hdmlnYXRpb24iIGNhdGVnb3J5X2lkPSJjYXRlZ29yeS8zIiBkaXJlY3Rpb249InZlcnRpY2FsIn19";s:9:"css_class";s:9:"menu-link";s:13:"container_css";s:0:"";s:5:"depth";s:1:"4";}i:36;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:9:"col-sm-8 ";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:37;a:5:{s:4:"type";s:4:"text";s:4:"text";s:308:"PHA+PHN0cm9uZz5Db2x1bW4gd2lkdGggPSAyNTBweDwvc3Ryb25nPjwvcD4KCjxwPlRoaXMgaXMgc2FtcGxlIGNvbnRlbnQgb2YgIlRleHQiIG1lbnUgaXRlbS4gWW91IGNhbiBlbnRlciB5b3VyIG93biB0ZXh0IGhlcmUuIEl0IHN1cHBvcnRzIDxzdHJvbmc+V1lTSVdZRyBFZGl0b3I8L3N0cm9uZz4gYXMgd2VsbCBhcyA8ZW0+bWFnZW50byBkaXJlY3RpdmU8L2VtPiAoYmxvY2ssIHdpZGdldC4uLik8L3A+";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"4";}i:38;a:7:{s:4:"type";s:4:"hbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}i:39;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:9:"col-sm-12";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:40;a:5:{s:4:"type";s:4:"text";s:4:"text";s:308:"PHA+PHN0cm9uZz5Db2x1bW4gd2lkdGggPSA0MDBweDwvc3Ryb25nPjwvcD4KCjxwPlRoaXMgaXMgc2FtcGxlIGNvbnRlbnQgb2YgIlRleHQiIG1lbnUgaXRlbS4gWW91IGNhbiBlbnRlciB5b3VyIG93biB0ZXh0IGhlcmUuIEl0IHN1cHBvcnRzIDxzdHJvbmc+V1lTSVdZRyBFZGl0b3I8L3N0cm9uZz4gYXMgd2VsbCBhcyA8ZW0+bWFnZW50byBkaXJlY3RpdmU8L2VtPiAoYmxvY2ssIHdpZGdldC4uLik8L3A+";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"4";}i:41;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:0:"";s:9:"css_class";s:20:"col-sm-12 menu-link ";s:13:"container_css";s:0:"";s:5:"depth";s:1:"3";}i:42;a:5:{s:4:"type";s:4:"text";s:4:"text";s:352:"PHA+PHN0cm9uZz5Db2x1bW4gd2lkdGggPSAzNTBweDwvc3Ryb25nPjwvcD4KCjxwPkJlbG93IGlzIDxjb2RlPnsge3dpZGdldCB0eXBlPSJtZWdhbWVudXByby9jYXRhbG9nbmF2aWdhdGlvbiIgY2F0ZWdvcnlfaWQ9ImNhdGVnb3J5LzMiIGRpcmVjdGlvbj0idmVydGljYWwifSB9PC9jb2RlPjwvcD4Ke3t3aWRnZXQgdHlwZT0ibWVnYW1lbnVwcm8vY2F0YWxvZ25hdmlnYXRpb24iIGNhdGVnb3J5X2lkPSJjYXRlZ29yeS8zIiBkaXJlY3Rpb249InZlcnRpY2FsIn19";s:9:"css_class";s:9:"menu-link";s:13:"container_css";s:0:"";s:5:"depth";s:1:"4";}i:43;a:8:{s:4:"type";s:4:"link";s:5:"label";s:10:"Categories";s:8:"sublabel";s:0:"";s:3:"url";s:1:"#";s:6:"target";s:0:"";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"0";}i:44;a:7:{s:4:"type";s:4:"vbox";s:5:"width";s:0:"";s:6:"height";s:0:"";s:7:"spacing";s:2:"20";s:9:"css_class";s:36:"col-menu col-sm-24 menu_col6 fix-top";s:13:"container_css";s:0:"";s:5:"depth";s:1:"1";}i:45;a:5:{s:4:"type";s:4:"text";s:4:"text";s:608:"PHA+VXNlIDxzdHJvbmc+Um93cyBMYXlvdXQ8L3N0cm9uZz4gYXMgcGFyZW50IDxzdHJvbmc+VGV4dDwvc3Ryb25nPiBmb3IgcHVycG9zZSBvZiBzZXR0aW5nIDxlbT5zcGFjaW5nPTEwPC9lbT48L3A+Cgo8cD5DYXRlZ29yaWVzJyBDb250YWluZXIgQ1NTOiA8ZW0+d2lkdGg6MzAwcHg8L2VtPjwvcD4KCjxwPjxjb2RlPnsge3dpZGdldCB0eXBlPSJtZWdhbWVudXByby9jYXRhbG9nbmF2aWdhdGlvbiIgY2F0ZWdvcnlfaWQ9ImNhdGVnb3J5LzMiIGRpcmVjdGlvbj0idmVydGljYWwifSB9PC9jb2RlPjwvcD4KCjxwPjxzdHJvbmc+VGV4dDwvc3Ryb25nPiBpdGVtIGNvbnRhaW5zIHRoZSBibG9jayA8ZW0+bWVnYW1lbnVwcm8vY2F0YWxvZ25hdmlnYXRpb248L2VtPiBhbHJlYWR5IGhhcyBtYXJnaW4gc28gd2UgcGxhY2UgaXQgb3V0c2lkZSB0aGUgPHN0cm9uZz5Sb3dzIExheW91dDwvc3Ryb25nPjwvcD4=";s:9:"css_class";s:0:"";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}i:46;a:5:{s:4:"type";s:4:"text";s:4:"text";s:124:"e3t3aWRnZXQgdHlwZT0ibWVnYW1lbnVwcm8vY2F0YWxvZ25hdmlnYXRpb24iIGNhdGVnb3J5X2lkPSJjYXRlZ29yeS8zIiBkaXJlY3Rpb249InZlcnRpY2FsIn19";s:9:"css_class";s:9:"menu-link";s:13:"container_css";s:0:"";s:5:"depth";s:1:"2";}}
+EOB
+	,
+	'status' => "1"
+))->setCreatedTime(now())->setUpdateTime(now())->save();
+$menu_id = $model->getId();
+
+/* Block Menu */
+$dataBlock = array(
+	'title' => 'Gala TitanShop Main Left Menu',
+	'identifier' => $prefixBlock.'main_left_menu',
+	'stores' => $stores,
+	'is_active' => 1,
+	'content'	=> <<<EOB
+<div class="menu-wrapper">
+<div class="all_categories" id="menuleftText">
+<div class="menuleftText-title">
+<div class="menuleftText"><span>Categories</span></div>
+</div>
+</div>
+<div class="menuleft">
+<div id="menu-default" class="mega-menu">{{block type="page/html_topmenu" name="galatitanshop.catalog.leftnav" template="page/html/leftmenu.phtml"}}{{widget type="megamenupro/megamenupro" menu="$menu_id"}}</div>
+</div>
+</div>
+EOB
+);
+$block = $helper->insertStaticBlock($dataBlock);
+$block_id['main_left_menu'] = $block->getId();
+
+// Widget Menu */
+// 1.Gala TitanShop - Area01 - Main Left Menu
+$widget = array(
+	'type' => 'cmswidget/widget_block',
+	'title' => 'Gala TitanShop - Area01 - Main Left Menu',
+	'store_ids' => $stores,
+	'sort_order' => 0,
+	'widget_parameters'	=> <<<EOB
+a:5:{s:8:"block_id";s:2:"25";s:12:"custom_class";s:0:"";s:25:"custom_html_wrapper_class";s:0:"";s:22:"custom_html_wrapper_id";s:0:"";s:11:"block_title";s:0:"";}
+EOB
+	,
+	'page_groups'=>	unserialize(<<<EOB
+a:1:{i:0;a:2:{s:10:"page_group";s:9:"all_pages";s:9:"all_pages";a:6:{s:7:"page_id";s:2:"45";s:5:"group";s:9:"all_pages";s:5:"block";s:8:"em_area1";s:9:"for_value";s:3:"all";s:13:"layout_handle";s:7:"default";s:8:"template";s:0:"";}}}
+EOB
+	)
+);
+galatitanshop_install_fix_widget_block_id($widget, $block_id['main_left_menu']);
+$widgetInstance->setData($widget)->setType('cmswidget/widget_block')->setPackageTheme($package_theme)->save();
+?>

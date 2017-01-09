@@ -1,0 +1,381 @@
+
+<div class="nav-bar">
+<!-- menu start -->
+<ul id="nav">
+<li  class="  level0"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/dashboard/index/key/$dashboard/index$/"   class=""><span>Bàn điều khiển</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Kinh doanh</span></a>
+<ul >
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/sales_order/index/key/$sales_order/index$/"   class=""><span>Đơn hàng</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/sales_invoice/index/key/$sales_invoice/index$/"   class=""><span>Hóa đơn</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/sales_shipment/index/key/$sales_shipment/index$/"   class=""><span>Giao hàng</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/sales_creditmemo/index/key/$sales_creditmemo/index$/"   class=""><span>Credit Memos</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/sales_transactions/index/key/$sales_transactions/index$/"   class=""><span>Giao dịch</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/sales_recurring_profile/index/key/$sales_recurring_profile/index$/"   class=""><span>Recurring Profiles (beta)</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/sales_billing_agreement/index/key/$sales_billing_agreement/index$/"   class=""><span>Qui định thanh toán</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/checkout_agreement/index/key/$checkout_agreement/index$/"   class=""><span>Điều khoản thanh toán</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#"  onclick="return false" class=""><span>Thuế</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/tax_rule/index/key/$tax_rule/index$/"   class=""><span>Manage Tax Rules</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/tax_rate/index/key/$tax_rate/index$/"   class=""><span>Manage Tax Zones &amp; Rates</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/tax_rate/importExport/key/$tax_rate/importExport$/"   class=""><span>Import / Export Tax Rates</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/tax_class_customer/index/key/$tax_class_customer/index$/"   class=""><span>Customer Tax Classes</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/tax_class_product/index/key/$tax_class_product/index$/"   class=""><span>Product Tax Classes</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Danh mục</span></a>
+<ul >
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/catalog_product/index/key/$catalog_product/index$/"   class=""><span>Quản lý sản phẩm</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/catalog_category/index/key/$catalog_category/index$/"   class=""><span>Quản lý danh mục</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Thuộc tính</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/catalog_product_attribute/index/key/$catalog_product_attribute/index$/"   class=""><span>Quản lý thuộc tính</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/catalog_product_set/index/key/$catalog_product_set/index$/"   class=""><span>Quản lý nhóm thuộc tính                                                                                                                                                                                                                                                                                           </span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/urlrewrite/index/key/$urlrewrite/index$/"   class=""><span>URL Rewrite Management</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/catalog_search/index/key/$catalog_search/index$/"   class=""><span>Điều khoản tìm kiếm</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Nhận xét và đánh giá</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#"  onclick="return false" class=""><span>Nhận xét của khách hàng</span></a>
+<ul >
+<li  class="  level3"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/catalog_product_review/pending/key/$catalog_product_review/pending$/"   class=""><span>Pending Reviews</span></a>
+</li>
+<li  class="  last level3"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/catalog_product_review/index/key/$catalog_product_review/index$/"   class=""><span>Toàn bộ Nhận xét</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/rating/index/key/$rating/index$/"   class=""><span>Manage Ratings</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Tags</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/tag/index/key/$tag/index$/"   class=""><span>Tất cả Tags</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/tag/pending/key/$tag/pending$/"   class=""><span>Tags đang chờ</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/sitemap/index/key/$sitemap/index$/"   class=""><span>Google Sitemap</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Mobile</span></a>
+<ul >
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/mobile/index/key/$mobile/index$/"   class=""><span>Manage Apps</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/mobile/history/key/$mobile/history$/"   class=""><span>Submission History</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/mobile/template/key/$mobile/template$/"   class=""><span>Message Templates</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/mobile/queue/key/$mobile/queue$/"   class=""><span>Message Queue</span></a>
+</li>
+<li  class="  last level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/admin_application/index/key/$admin_application/index$/"   class=""><span>Admin Application Settings</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Khách hàng</span></a>
+<ul >
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/customer/index/key/$customer/index$/"   class=""><span>Quản lý khách hàng</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/customer_group/index/key/$customer_group/index$/"   class=""><span>Nhóm khách hàng</span></a>
+</li>
+<li  class="  last level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/customer_online/index/key/$customer_online/index$/"   class=""><span>Online Customers</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Khuyến mãi</span></a>
+<ul >
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/promo_catalog/index/key/$promo_catalog/index$/"   class=""><span>Catalog Price Rules</span></a>
+</li>
+<li  class="  last level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/promo_quote/index/key/$promo_quote/index$/"   class=""><span>Shopping Cart Price Rules</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Bản tin mới</span></a>
+<ul >
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/newsletter_template/index/key/$newsletter_template/index$/"   class=""><span>Mẫu bản tin</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/newsletter_queue/index/key/$newsletter_queue/index$/"   class=""><span>Newsletter Queue</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/newsletter_subscriber/index/key/$newsletter_subscriber/index$/"   class=""><span>Đăng ký nhận bản tin</span></a>
+</li>
+<li  class="  last level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/newsletter_problem/index/key/$newsletter_problem/index$/"   class=""><span>Newsletter Problem Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Quản lý CMS</span></a>
+<ul >
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/cms_page/index/key/$cms_page/index$/"   class=""><span>Trang</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/cms_block/index/key/$cms_block/index$/"   class=""><span>Khối tĩnh</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/widget_instance/index/key/$widget_instance/index$/"   class=""><span>Widgets</span></a>
+</li>
+<li  class="  last level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/poll/index/key/$poll/index$/"   class=""><span>Polls</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Blog</span></a>
+<ul >
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/blog_admin/manage_blog/new/key/$manage_blog/new$/"   class=""><span>Add Post</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/blog_admin/manage_blog/index/key/$manage_blog/index$/"   class=""><span>Posts</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/blog_admin/manage_comment/index/key/$manage_comment/index$/"   class=""><span>Bình luận</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/blog_admin/manage_cat/index/key/$manage_cat/index$/"   class=""><span>Danh mục</span></a>
+</li>
+<li  class="  last level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_config/edit/section/blog/key/$system_config/edit$/"   class=""><span>Cài đặt</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>GalaThemes</span></a>
+<ul >
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_config/edit/section/galatitanshop/key/$system_config/edit$/"   class=""><span>Cài đặt Gala Titanshop</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Product Labels</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/productlabels/index/key/$productlabels/index$/"   class=""><span>Manage Product Labels</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/csslabel/edit/key/$csslabel/edit$/"   class=""><span>Css Editor</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/themeframework_admin/adminhtml_area/previewBlock/key/$adminhtml_area/previewBlock$/"   class=""><span>Visual Content Editor</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>EM Theme Framework</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/themeframework_admin/adminhtml_area/index/key/$adminhtml_area/index$/"   class=""><span>Layout Design</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/themeframework_admin/adminhtml_page/index/key/$adminhtml_page/index$/"   class=""><span>Layout Update</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>EM QuickShop</span></a>
+<ul >
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_config/edit/section/quickshop/key/$system_config/edit$/"   class=""><span>Cài đặt</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>EM Group Deals</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/multidealpro/new/key/$multidealpro/new$/"   class=""><span>New Deal</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/multidealpro/index/key/$multidealpro/index$/"   class=""><span>Deals Manage</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_config/edit/section/multidealpro/key/$system_config/edit$/"   class=""><span>Cài đặt</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/megamenupro/index/key/$megamenupro/index$/"   class=""><span>EM Menu Manager</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/slider/index/key/$slider/index$/"   class=""><span>EM Slideshow</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#"  onclick="return false" class=""><span>Help &amp; Support</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/galatitanshopsettings_link/userguide/key/$galatitanshopsettings_link/userguide$/"   class=""><span>Gala Titanshop User Guide</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/galatitanshopsettings_link/requestinstallation/key/$galatitanshopsettings_link/requestinstallation$/"   class=""><span>Request installation</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/galatitanshopsettings_link/contactus/key/$galatitanshopsettings_link/contactus$/"   class=""><span>Liên hệ với chúng tôi</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/galatitanshopsettings_link/technicalsupport/key/$galatitanshopsettings_link/technicalsupport$/"   class=""><span>Technical support</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Báo cáo</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Kinh doanh</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_sales/sales/key/$report_sales/sales$/"   class=""><span>Đơn hàng</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_sales/tax/key/$report_sales/tax$/"   class=""><span>Thuế</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_sales/invoiced/key/$report_sales/invoiced$/"   class=""><span>Đã lập hóa đơn</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_sales/shipping/key/$report_sales/shipping$/"   class=""><span>Vận chuyển</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_sales/refunded/key/$report_sales/refunded$/"   class=""><span>Refunds</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_sales/coupons/key/$report_sales/coupons$/"   class=""><span>Mã giảm giá</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/paypal_reports/index/key/$paypal_reports/index$/"   class=""><span>PayPal Settlement Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Giỏ hàng</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_shopcart/product/key/$report_shopcart/product$/"   class=""><span>Products in carts</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_shopcart/abandoned/key/$report_shopcart/abandoned$/"   class=""><span>Giỏ hàng bị hủy</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Sản phẩm</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_sales/bestsellers/key/$report_sales/bestsellers$/"   class=""><span>Sản phẩm bán chạy</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_product/sold/key/$report_product/sold$/"   class=""><span>Sản phẩm đã mua</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_product/viewed/key/$report_product/viewed$/"   class=""><span>Most Viewed</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_product/lowstock/key/$report_product/lowstock$/"   class=""><span>Low stock</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_product/downloads/key/$report_product/downloads$/"   class=""><span>Downloads</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Khách hàng</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_customer/accounts/key/$report_customer/accounts$/"   class=""><span>Tài khoản mới</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_customer/totals/key/$report_customer/totals$/"   class=""><span>Customers by orders total</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_customer/orders/key/$report_customer/orders$/"   class=""><span>Customers by number of orders</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Tags</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_tag/customer/key/$report_tag/customer$/"   class=""><span>Khách hàng</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_tag/product/key/$report_tag/product$/"   class=""><span>Sản phẩm</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_tag/popular/key/$report_tag/popular$/"   class=""><span>Phổ biến</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Đánh giá</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_review/customer/key/$report_review/customer$/"   class=""><span>Nhận xét của khách hàng</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_review/product/key/$report_review/product$/"   class=""><span>Products Reviews</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report/search/key/$report/search$/"   class=""><span>Nhu cầu tìm kiếm</span></a>
+</li>
+<li  class="  last level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/report_statistics/index/key/$report_statistics/index$/"   class=""><span>Refresh Statistics</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class=" active  parent level0"> <a href="#"  onclick="return false" class="active"><span>Hệ thống</span></a>
+<ul >
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_account/index/key/$system_account/index$/"   class=""><span>Tài khoản của tôi</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/notification/index/key/$notification/index$/"   class=""><span>Thông báo</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Công cụ</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_backup/index/key/$system_backup/index$/"   class=""><span>Backups</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/smtppro/log/index/key/$log/index$/"   class=""><span>Email Log</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/compiler_process/index/key/$compiler_process/index$/"   class=""><span>Compilation</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Web Services</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/api_user/index/key/$api_user/index$/"   class=""><span>SOAP/XML-RPC - Users</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/api_role/index/key/$api_role/index$/"   class=""><span>SOAP/XML-RPC - Roles</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/api2_role/index/key/$api2_role/index$/"   class=""><span>REST - Roles</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/api2_attribute/index/key/$api2_attribute/index$/"   class=""><span>REST - Attributes</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/oauth_consumer/index/key/$oauth_consumer/index$/"   class=""><span>REST - OAuth Consumers</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/oauth_authorizedTokens/index/key/$oauth_authorizedTokens/index$/"   class=""><span>REST - OAuth Authorized Tokens</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/oauth_admin_token/index/key/$oauth_admin_token/index$/"   class=""><span>REST - My Apps</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_design/index/key/$system_design/index$/"   class=""><span>Giao diện</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Import/Export</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/import/index/key/$import/index$/"   class=""><span>Nhập</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/export/index/key/$export/index$/"   class=""><span>Xuất</span></a>
+</li>
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_convert_gui/index/key/$system_convert_gui/index$/"   class=""><span>Dataflow - Profiles</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_convert_profile/index/key/$system_convert_profile/index$/"   class=""><span>Dataflow - Advanced Profiles</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_currency/index/key/$system_currency/index$/"   class=""><span>Manage Currency</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_currency/index/key/$system_currency/index$/"   class=""><span>Đánh giá</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_currencysymbol/index/key/$system_currencysymbol/index$/"   class=""><span>Symbols</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_email_template/index/key/$system_email_template/index$/"   class=""><span>Emails giao dịch</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_variable/index/key/$system_variable/index$/"   class=""><span>Custom Variables</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Quyền hạn</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/permissions_user/index/key/$permissions_user/index$/"   class=""><span>Người dùng</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/permissions_role/index/key/$permissions_role/index$/"   class=""><span>Vai trò</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Magento Connect</span></a>
+<ul >
+<li  class="  level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/extension_local/index/key/$extension_local/index$/"   class=""><span>Magento Connect Manager</span></a>
+</li>
+<li  class="  last level2"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/extension_custom/index/key/$extension_custom/index$/"   class=""><span>Package Extensions</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/cache/index/key/$cache/index$/"   class=""><span>Cache Management</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/process/list/key/$process/list$/"   class=""><span>Index Management</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_store/index/key/$system_store/index$/"   class=""><span>Manage Stores</span></a>
+</li>
+<li  class="  level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/sales_order_status/index/key/$sales_order_status/index$/"   class=""><span>Order Statuses</span></a>
+</li>
+<li  class="  last level1"> <a href="http://localhost/galatitanshop-full-package/index.php/admin/system_config/index/key/$system_config/index$/"   class=""><span>Cấu hình</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- menu end -->
+
+    <a id="page-help-link" href="http://www.magentocommerce.com/gethelp/vi_VN/Mage_Adminhtml/system_config/edit/general/">Trợ giúp</a>
+    <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
+
+</div>

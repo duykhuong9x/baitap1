@@ -1,0 +1,13 @@
+
+    <div class="widget widget-static-block ">
+    	    	<div class="block block-account">
+ <div class="block-title">
+        <strong><span>Bảo vệ tài khoản</span></strong>
+    </div>
+<div class="block-content">
+      <p class="block-subtitle">Tài khoản của bạn đang được bảo vệ</p>
+      <p><a title="account protected" href="#"><img src="http://localhost/galatitanshop-full-package/skin/frontend/default/galatitanshop/images/media/left_account_protected.png" alt="" /></a></p>
+</div>
+</div>
+    </div>
+

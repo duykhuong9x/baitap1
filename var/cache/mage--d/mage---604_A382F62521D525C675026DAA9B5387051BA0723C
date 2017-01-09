@@ -1,0 +1,67 @@
+<div class="widget-tab-home new_tab_slider">
+		  
+		<div class="widget-title">
+			<h2><span>Các sản phẩm mới</span></h2>
+		</div>
+		
+			
+			<div class="widget em-widget-new-products-grid">
+			<div class="widget-products">
+														<ul class="products-grid">
+										<li class="item first last"
+						style="  ">
+						<div class="product-item">
+    						    							<a href="http://localhost/galatitanshop-full-package/index.php/htc-one-m9.html" title="HTC One M9" class="product-image">
+    								    									<!--show label product - label extension is required-->
+    									<span class="productlabels_icons">
+            <span class="label new" >
+                        <span>
+                        Mới        </span>
+    </span>
+    </span>    								    								<img src="http://localhost/galatitanshop-full-package/media/catalog/product/cache/1/small_image/204x204/9df78eab33525d08d6e5fb8d27136e95/h/t/htc-one-m9-300-400x533.png" width="204" height="204"  alt="HTC One M9" />
+                                    <span class="bkg-hover"></span>
+    							</a>
+    						    						
+    						<div class="product-shop">
+    							<div class="f-fix">
+    								<!--product name-->
+    								    									<h3 class="product-name"><a href="http://localhost/galatitanshop-full-package/index.php/htc-one-m9.html" title="HTC One M9">HTC One M9</a></h3>
+    								    								
+    								<!--product description-->
+    								    								
+    								<!--product reviews-->
+    								    									    								    								
+    								<!--product price-->
+    								    																				
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-162-widget-new-list">
+                                            <span class="price">16.990.000 ₫</span>                                    </span>
+                        
+        </div>
+
+										    								                                    
+                                        								<div class="actions-cart">
+        								<div class="actions">
+            								<!--product add to cart-->
+            								            									            										<button type="button" title="Đặt mua" class="button btn-cart" onclick="setLocation('http://localhost/galatitanshop-full-package/index.php/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9nYWxhdGl0YW5zaG9wLWZ1bGwtcGFja2FnZS8,/product/162/form_key/vOPedFL6u8wU9nvg/')"><span><span>Đặt mua</span></span></button>
+            									            								            								
+            								<!--product add to compare-wishlist-->
+            								            									<ul class="add-to-links">
+            										            											<li><a href="http://localhost/galatitanshop-full-package/index.php/wishlist/index/add/product/162/form_key/vOPedFL6u8wU9nvg/" class="link-wishlist" title="Thêm vào muốn có">Thêm vào muốn có</a></li>
+            										            										            											<li><span class="separator">|</span> <a href="http://localhost/galatitanshop-full-package/index.php/catalog/product_compare/add/product/162/uenc/aHR0cDovL2xvY2FsaG9zdC9nYWxhdGl0YW5zaG9wLWZ1bGwtcGFja2FnZS8,/form_key/vOPedFL6u8wU9nvg/" class="link-compare" title="So sánh">So sánh</a></li>
+            										            									</ul>
+            								        								</div>
+    								</div>
+                                        							</div>
+    						</div>
+                        </div>
+					</li>
+										</ul>
+																		</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	decorateGeneric($$('ul.products-grid'),['last','first','odd','even']);
+</script>

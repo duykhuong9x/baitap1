@@ -1,0 +1,23 @@
+
+    <div class="widget widget-static-block ">
+    	    	<div class="box_banner row">
+<div class="content col-sm-8 first"><span class="icon icon-sweet">&nbsp;</span>
+<div class="box-content">
+<h5 class="box-title">Sweet Menu</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce Pharetra libero nec mauris molestie sed dictum tortor blandit. Per inceptos himenaeos.</p>
+<a class="view-more" href="#"><span>View more ></span></a></div>
+</div>
+<div class="content col-sm-8"><span class="icon icon-fantastic ">&nbsp;</span>
+<div class="box-content">
+<h5 class="box-title">Fantastic caf&eacute;</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce Pharetra libero nec mauris molestie sed dictum tortor blandit. Per inceptos himenaeos.</p>
+<a class="view-more" href="#"><span>View more ></span></a></div>
+</div>
+<div class="content col-sm-8 last"><span class="icon icon-special">&nbsp;</span>
+<div class="box-content">
+<h5 class="box-title">Daily Specials</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce Pharetra libero nec mauris molestie sed dictum tortor blandit. Per inceptos himenaeos.</p>
+<a class="view-more" href="#"><span>View more ></span></a></div>
+</div>
+</div>    </div>
+

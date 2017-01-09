@@ -1,0 +1,15 @@
+.header-top .container-fluild{ padding:3px 20px 5px}
+.breadcrumbs-container.container-fluild,
+.main_container.container-fluild,
+.wrapper_cart_search .cart_search_container,
+.menu_slideshow_container.container-fluild,
+.header-bottom .logo_menu_wrapper{ padding-left:20px; padding-right:20px}
+.cms-index-index .wrapper_main .main_container{ padding-top:20px}
+.cms-index-index .wrapper_main .main_container.area03_container{ padding-top:0px}
+.category-products .products-grid{ margin-right:0}
+.inner_main > .row{ }
+
+@media (min-width: 768px){
+	.cms-index-index .menuleft #menu-default{ position:absolute}
+	.cms-index-index .menuleft #menu-default{ width:311px}
+}

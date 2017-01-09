@@ -1,0 +1,213 @@
+<?php if($this->checkHomepage() == 1): ?>
+	<?php
+		$_helper 	=	$this->helper('catalog/output');
+		$setting 	=	Mage::helper('multidealpro');
+
+		$w =	$setting->getMainDeal_ThumbnailWidth(135);
+		$h =	$setting->getMainDeal_ThumbnailHeight(135);
+	?>
+	<?php $_productCollection	=	$this->getProductCollection(); ?>
+	<?php $_collectionSize	=	$_productCollection->count(); ?>
+	<?php if($_collectionSize <= 0): ?>
+		<p class="note-msg"><?php echo $setting->getGeneral_NoDeal() ?></p>
+	<?php else :?>
+		<div class="multidealpro_products">
+			<?php echo $this->getToolbarHtml() ?>
+
+			<?php // List mode ?>
+			<?php if($this->getMode()!='grid'): ?>
+				<?php $_iterator = 0; ?>
+				<ul class="products-list" id="products-list">
+				<?php foreach ($_productCollection as $_product): ?>
+					<?php //$_product = $setting->checkStatus($_product,$_product->getId())?>
+					<li class="item<?php if( ++$_iterator == sizeof($_productCollection) ): ?> last<?php endif; ?>">
+						
+						<!-- Show Thumbnail -->
+						<?php if ($setting->getMainDeal_ShowThumbnail()): ?>
+						<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+                            <!-- Show Label -->
+							<?php if ($setting->getMainDeal_ShowLabel()): ?>
+								<?php echo $setting->getLabel($_product) ?>
+							<?php endif; ?>
+							<img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($w,$h); ?>" width="<?php echo $w ?>" height="<?php echo $w ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+
+						</a>
+						<?php endif ?>
+						
+						<div class="product-shop">
+							<div class="f-fix">
+
+								<!--Show name -->
+								<?php $_productNameStripped = $this->stripTags($_product->getName(), null, true); ?>
+								<?php if ($setting->getMainDeal_ShowName()): ?>
+									<h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped; ?>"><?php echo $_helper->productAttribute($_product, $_product->getName() , 'name'); ?></a></h2>
+								<?php endif ?>
+
+								<!-- Show SKU -->
+								<?php if ($setting->getMainDeal_ShowSku()):?>
+									<p class="sku"><?php echo $_product->getSKU()?></p>
+								<?php endif ?>
+
+								<!-- Show Reviews -->
+								<?php if ($setting->getMainDeal_ShowReview()):?>
+									<?php //if($_product->getRatingSummary()): ?>
+										<?php echo $this->getReviewsSummaryHtml($_product,"short") ?>
+									<?php //endif; ?>
+								<?php endif ?>
+
+								<!-- Show Description -->
+								<?php if ($setting->getMainDeal_ShowDescription()):?>
+									<div class="desc std">
+										<?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?>
+										<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>" class="link-learn"><?php echo $this->__('Learn More') ?></a>
+									</div>
+								<?php endif ?>
+
+								<!-- Show Price -->
+								<?php if ($setting->getMainDeal_ShowPrice()): ?>
+									<?php echo $this->getPriceHtml($_product, true) ?>
+								<?php endif; ?>
+
+								<?php $status = $_product->getDealStatus(); ?>
+								<!-- Show qty item left && Clock Countdown -->
+								<?php if ($status == 2): ?>
+									<div class="msg_soldout"><?php echo $this->__('Time Out') ?></div>
+								<?php else: ?>
+									<?php echo $setting->getQtyleft($_product); ?>
+									
+									<div class="deal_info" style="display:none"><?php echo $setting->getInfo(1,$setting->getMainDeal_ShowLabel(),$setting->getMainDeal_ShowPrice(),$setting->getMainDeal_ShowBtncart(),$setting->getMainDeal_ShowAddto()) ?></div>
+
+									<?php echo $setting->getClock($_product); ?>
+								<?php endif ?>
+
+								<!-- Show Button AddtoCart -->
+								<?php if ($status == 1 && $setting->getMainDeal_ShowBtncart()): ?>
+									<?php if($_product->isSaleable()): ?>
+										<button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+									<?php else: ?>
+										<p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+									<?php endif; ?>
+								<?php endif; ?>
+
+								<!-- Show Wishlist/Compare Link -->
+								<?php if ($setting->getMainDeal_ShowAddto()): ?>
+									<ul class="add-to-links">
+										<?php if ($this->helper('wishlist')->isAllow()) : ?>
+											<li><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>" class="link-wishlist" title="<?php echo $this->__('Add to Wishlist') ?>"><?php echo $this->__('Add to Wishlist') ?></a></li>
+										<?php endif; ?>
+										<?php if($_compareUrl=$this->getAddToCompareUrl($_product)): ?>
+											<li><span class="separator">|</span> <a href="<?php echo $_compareUrl ?>" class="link-compare" title="<?php echo $this->__('Add to Compare') ?>"><?php echo $this->__('Add to Compare') ?></a></li>
+										<?php endif; ?>
+									</ul>
+								<?php endif ?>
+
+							</div>
+						</div>
+					</li>
+				<?php endforeach; ?>
+				</ul>
+				<script type="text/javascript">decorateList('products-list', 'none-recursive')</script>
+			<?php else : ?>
+				<?php $_columnCount = $setting->getMainDeal_ColumnCount(); ?>
+				<?php $i=0; foreach ($_productCollection as $_product): ?>
+					<?php //$_product = $setting->checkStatus($_product,$_product->getId())?>
+                    <?php if ($_columnCount > 0 && $i%$_columnCount==0 || $_columnCount <= 0 && $i == 0): ?>
+					<ul class="products-grid">
+					<?php endif ?>
+						<li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
+							
+
+							<!-- Show Thumbnail -->
+							<?php if ($setting->getMainDeal_ShowThumbnail()): ?>
+							<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+								<img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($w,$h); ?>" width="<?php echo $w ?>" height="<?php echo $w ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+
+								<!-- Show Price -->
+								<?php if ($setting->getMainDeal_ShowLabel()): ?>
+									<?php echo $setting->getLabel($_product) ?>
+								<?php endif; ?>
+							</a>
+							<?php endif ?>
+
+							<div class="product-shop">
+								<!--Show name -->
+								<?php $_productNameStripped = $this->stripTags($_product->getName(), null, true); ?>
+								<?php if ($setting->getMainDeal_ShowName()): ?>
+									<h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h2>
+								<?php endif ?>
+
+								<!-- Show SKU -->
+								<?php if ($setting->getMainDeal_ShowSku()):?>
+									<p class="sku"><?php echo $_product->getSKU()?></p>
+								<?php endif ?>
+
+								<!-- Show Reviews -->
+								<?php if ($setting->getMainDeal_ShowReview()):?>
+									<?php //if($_product->getRatingSummary()): ?>
+										<?php echo $this->getReviewsSummaryHtml($_product,"short") ?>
+									<?php //endif; ?>
+								<?php endif ?>
+
+								<!-- Show Description -->
+								<?php if ($setting->getMainDeal_ShowDescription()):?>
+									<div class="desc std">
+										<?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?>
+										<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>" class="link-learn"><?php echo $this->__('Learn More') ?></a>
+									</div>
+								<?php endif ?>
+
+								<!-- Show Price -->
+								<?php if ($setting->getMainDeal_ShowPrice()): ?>
+									<?php echo $this->getPriceHtml($_product, true) ?>
+								<?php endif; ?>
+
+								<?php $status = $_product->getDealStatus(); ?>
+								<!-- Show qty item left && Clock Countdown -->
+								<?php if ($status == 2): ?>
+									<div class="msg_soldout"><?php echo $this->__('Time Out') ?></div>
+								<?php else: ?>
+									<?php echo $setting->getQtyleft($_product); ?>
+
+									<div class="deal_info" style="display:none"><?php echo $setting->getInfo(1,$setting->getMainDeal_ShowLabel(),$setting->getMainDeal_ShowPrice(),$setting->getMainDeal_ShowBtncart(),$setting->getMainDeal_ShowAddto()) ?></div>
+
+									<?php echo $setting->getClock($_product); ?>
+									
+								<?php endif ?>
+
+								<!-- Show Button AddtoCart -->
+								<?php if ($status == 1 && $setting->getMainDeal_ShowBtncart()): ?>
+									<?php if($_product->isSaleable()): ?>
+										<button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+									<?php else: ?>
+										<p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+									<?php endif; ?>
+								<?php endif; ?>
+
+								<!-- Show Wishlist/Compare Link -->
+								<?php if ($setting->getMainDeal_ShowAddto()): ?>
+									<ul class="add-to-links">
+										<?php if ($this->helper('wishlist')->isAllow()) : ?>
+											<li><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>" class="link-wishlist" title="<?php echo $this->__('Add to Wishlist') ?>"><?php echo $this->__('Add to Wishlist') ?></a></li>
+										<?php endif; ?>
+										<?php if($_compareUrl=$this->getAddToCompareUrl($_product)): ?>
+											<li><span class="separator">|</span> <a href="<?php echo $_compareUrl ?>" class="link-compare" title="<?php echo $this->__('Add to Compare') ?>"><?php echo $this->__('Add to Compare') ?></a></li>
+										<?php endif; ?>
+									</ul>
+								<?php endif ?>
+
+							</div>
+						</li>
+                    <?php if ( $_columnCount > 0 && ($i+1)%$_columnCount==0 || $i+1==$_collectionSize ): ?>
+					</ul>
+					<?php endif; ?>
+					<?php $i++;?>
+					<?php endforeach ?>
+					<script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
+			<?php endif ?>
+
+			<div class="toolbar-bottom">
+				<?php echo $this->getToolbarHtml() ?>
+			</div>
+		</div>
+	<?php endif ?>
+<?php endif ?>

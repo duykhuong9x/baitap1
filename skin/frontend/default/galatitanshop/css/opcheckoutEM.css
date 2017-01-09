@@ -1,0 +1,112 @@
+/**
+ * OneStepCheckout by EMThemes
+ *
+ * Based on Magento 1.7.0.0 source code
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 EMThemes. (http://www.emthemes.com)
+ * @license     Commercial License. Granted for authorized users only.
+ */
+#checkoutSteps.opc-1sc{ background:#fff; padding:20px}
+.opc-col .step-title h2{ margin-bottom:0;}
+.opc-col .step-title .number{ float:left; padding-right:5px;}
+.opc-col .step-title .number:after,
+.opc-1sc:after { content:'.'; clear:both; height:0; overflow:hidden; zoom:1 }
+.opc-col .step-title{ margin-bottom:15px;}
+#checkout-step-billing .form-list li.control{ margin-bottom:5px}
+.opc-col1, .opc-col2{ width:33%; float:left; padding:0 1%; }
+.opc-col1{padding-left:0}
+.opc-col3 {width:33.7%; float:left; padding-left:1%}
+.opc-col1 { margin-left:0 }
+.opc-col .tool-tip{left:0%}
+.adapt-0 .opc-col .tool-tip{left:0%; top:230px !important}
+.opc-col .section { margin-bottom:2em; position:relative}
+.opc-col .section#opc-shipping_method { overflow:hidden}
+#opc-billing ,#opc-shipping{border-bottom:none;}
+#opc-shipping{padding-top:21px}
+.opc-col .section:last-child { border-bottom:0 }
+
+/*.opc-col #checkout-step-billing{ padding-top:18px}
+.opc-col #checkout-review-table-wrapper{ padding-top:28px}*/
+.opc-col #co-payment-form dt{ padding:4px 0}
+
+.opc-col .step-title h2 {padding:0;}
+.opc-col3 .step-title h2{}
+.opc-1sc p.required{clear:both; text-align:right;}
+
+.opc-col .form-list div.fields,
+.opc-col .form-list .field { width:100%;margin-bottom:8px; }
+.opc-col .form-list .input-box { width:100% }
+
+.opc-col .form-list input.input-text,.opc-col .discount-form .input-box input { width:100%!important;}
+
+.opc-col .form-list select { width:100%; }
+.opc-col .form-list li.wide .input-box { width:100% }
+/*.opc-col .form-list li.wide input.input-text { width:94.5% !important;}*/
+.opc-col .form-list li.wide select {  }
+
+
+.opc-col .discount { margin-top:10px }
+.opc-col .discount .label{ font-weight:normal; margin-bottom:0;}
+
+#opc-review .buttons-set { padding:0; border:0; margin:1em 0 0 }
+
+/* hide checkbox "Use Billing Address" */
+#opc-shipping .control { display:none !important }
+
+/* hide all continue buttons except review's */
+.opc-col .buttons-set { display:none !important }
+#opc-review .buttons-set { display:block !important }
+.opc-1sc #opc-login p{margin-bottom:27px}
+#opc-login p a { font-size:110%; text-decoration:underline; }
+#opc-login p a:hover{ text-decoration:none}
+#opc-login-popup { position:fixed; width:300px; margin:0 auto; z-index:9999; background:#fff; padding:10px 20px; text-align:left }
+#opc-login-popup-overlay { display:block; position:fixed; width:100%; height:100%; top:0; left:0; z-index:9998; background:#000; opacity:0.7; filter: alpha(opacity=75); }
+#opc-login-popup .close-btn { background:url(../images/btn_popup-close.png) no-repeat; width:38px; height:38px; position:absolute;; top:-16px; right:-16px; text-indent:-99999px }
+.opc-col #opc-review .product-name {font:12px Arial;padding-top:0px; margin-top:1px; margin-top:2px\0/}
+#opc-login-popup .form-list .input-box { width:100% }
+#opc-login-popup .form-list input.input-text { width:100% !important; }
+#opc-login-popup .buttons-set { margin-top:5px }
+
+
+.opc-col .discount-form .input-box input{ float:left; }
+.opc-col .form-list li{margin:0;}
+.opc-col .form-list li.control label{ text-transform:none;}
+.opc-col .form-list li.wide{margin-bottom:8px;}
+.opc-col .form-list #billing-new-address-form li.control{}
+.opc-col .form-list #billing-new-address-form{margin-bottom:0px}
+.opc-col .form-list li.control{}
+.opc-col input.radio{margin-top:-2px;}
+.opc-col #checkout-step-payment .form-list label{margin-bottom:8px;margin-top:5px;}
+#opc-login-popup .buttons-set button.button{float:right;}
+#opc-login-popup .buttons-set .f-left{margin-top:11px;}
+.opc-col #opc-payment .sp-methods .form-list{ padding:0;}
+.opc-col #opc-payment .form-list .v-fix:first-child,
+.opc-col .sp-methods .form-list .v-fix:first-child{ margin-right:4%;}
+.opc-col #opc-payment .form-list .v-fix,
+.opc-col .sp-methods .form-list .v-fix { width:48%}
+.opc-col #checkout-step-payment .sp-methods dt{margin:0;}
+.opc-col .sp-methods input.cvv{margin:3px 0 0 0;}
+.v-fix input.cvv{width:148px !important}
+.opc-col .cvv-what-is-this{float:left;margin:0;}
+
+.opc-col #opc-review .buttons-set{position:relative;margin:0; width:100%;}
+.opc-col #opc-review .buttons-set button.button span{ float:none; display:block}
+.opc-col #opc-review #checkout-review-submit .buttons-set .please-wait{float:left !important; clear:both;white-space:nowrap; position:static; margin-top:10px}
+.opc-col #review-buttons-container.buttons-set{float:left; padding-top:20px}
+.opc-col #review-buttons-container.buttons-set .f-left{float:left !important}
+.discount-form .input-box{clear:both;}
+.opc-col .discount-form .input-box input{width:94.5% !important;margin-right:15px;margin-top:0px;}
+.discount-form .input-box .validation-advice{margin-top:0;}
+#opc-review .buttons-set button.button{float:left !important; width:100%;}
+
+
+#opc-payment{clear:both}
+.opc-col .gift-messages-form .form-list .input-box,
+.gift-messages-form .form-list li.wide textarea{width:97%}
+.opc-col .discount button.button{clear:both; float:left; margin-top:10px}
+#opc-login-popup h3{margin-bottom:0}
+
+
+

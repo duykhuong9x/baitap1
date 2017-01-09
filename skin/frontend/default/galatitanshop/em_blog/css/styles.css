@@ -1,0 +1,208 @@
+/**
+ * EM Blog
+ *
+ * @license commercial software
+ * @copyright (c) 2012 Codespot Software JSC - EMThemes.com. (http://www.emthemes.com)
+ */
+
+.em_post-items > .em_post-item{ padding:10px}
+.em_post-items .em_post-item .post-title{ padding-top:17px; padding-bottom:5px}
+.em_post-items .em_post-item .post-title h2 a{ font-weight:700}
+/*Block Blog common*/
+.em_block-recent-post .block-content ,.em_block-recent-comments .block-content ,.em_blog-cat .block-content{padding:15px 10px 10px}
+.em_block-recent-post li.item .blog-title,.em_block-tag-cloud li.item .blog-title ,.em_block-recent-comments li.item .blog-title,.em_blog-cat li.item .blog-title{padding:0;font-weight:bold;font-weight:bold;}
+.em_block-recent-post li.item,.em_block-recent-comments li.item {padding-bottom:8px!important; padding-top:17px!important}
+.em_block-recent-post li.item:first-child,.em_block-recent-comments li.item:first-child {padding-top:2px!important;}
+.em_block-recent-post li.item.last,.em_block-recent-comments li.item .last{padding-bottom:5px!important} 
+.time-stamp,span.post-on,span.post-by,span.comment-by{}
+span.post-by{ text-transform:uppercase; padding-top:3px; font-size:80%}
+.time-stamp,.block span.post-on,.block span.post-by,.block span.comment-by {display:block}
+.time-stamp span,span.post-on span,span.post-by span,span.comment-by span{}
+,.block .comment-title{ font-weight:700}
+.block .time-stamp{}
+.block span.post-by span{}
+.block .post-title{font-weight:bold;}
+.block span.post-by, .block span.comment-by{text-transform:uppercase; font-size:80%; font-weight:bold; margin-top:10px;}
+/*Block: Recent Post*/
+.em_block-recent-post.block .title_recent{ display:inline-block; clear:both; float:left; text-align:left; margin-bottom:0}
+.em_block-recent-post.block .post-title{ }
+.em_block-recent-post.block .block-content li.item{ text-align:center}
+.em_block-recent-post.block .block-content li.item .a_recent{ }
+.em_block-recent-post.block .block-content li.item img{ margin-bottom:10px}
+.em_block-recent-post .block-title strong {}
+.block.em_block-recent-post .desc{ padding-top:6px; text-align:left; clear:both}
+.block.em_block-recent-post .desc p{ margin-bottom:0px}
+.block .post-footer{ margin-top:3px}
+.em_block-recent-comments li.item,
+.em_block-recent-post li{ border-top:1px dashed; padding:0 10px}
+.em_block-recent-comments li.item:first-child,
+.em_block-recent-post li:first-child{ border-top:none}
+
+
+
+/*Block: Tag Cloud*/
+.em_block-tag-cloud .block-content{}
+
+.em_block-tag-cloud .block-content .actions{background:none;padding:0;padding:6px 0 0}
+.em_block-tag-cloud .block-content .actions a{font-weight:bold}
+.em_block-tag-cloud .block-title strong {}
+.em_block-tag-cloud li.item a{}
+.em_block-tag-cloud .block-content li{ padding-right:15px}
+.em_col_main .em_block-tag-cloud{ margin:0}
+.em_col_main .em_block-tag-cloud .block-content{ padding:0}
+.em_col_main .em_block-tag-cloud .block-title{ display:none}
+.em_col_main .em_block-tag-cloud .block-content .actions{ display:none}
+
+/*Block: Recent Comment*/
+.em_block-recent-comments .block-title strong {}
+.em_block-recent-comments li.item .recent-content{text-decoration:none}
+.recent-comment-content{font-size:90%;margin:5px 0}
+.recent-comment-content pre{white-space:normal}
+.em_block-recent-comments .comment-title{ font-weight:700}
+/*Block :Blog*/
+.em_blog-cat .block-title strong {}
+.em_blog-cat li{}
+.em_blog-cat li.parent ul{padding-left:10px; padding-top:6px;margin:0; color:#c2c2c2}
+.em_blog-cat li a{ padding:4px 0; float:left; clear:both}
+.em_blog-cat .nav-blog{margin:0}
+
+/*Post List*/
+.em_post-item {clear:both; overflow:hidden; margin:0 0 30px;}
+.em_post-item .page-title {border:none;margin-bottom:7px}
+.post-title h2{margin:0}
+.post-title small{margin-bottom:15px; margin-top:8px;}
+
+.em_post-item .std p{}
+.em_post-item .std img{float:left;margin-right:20px;}
+.em_post-item .postDetails{ clear: both;font-size: 10px;margin-top: 10px;padding-top: 5px;}
+.em_post-item .postDetails a{}
+.post-by span{}
+.comment-count a{margin-left:3px}
+.post-footer{padding-top:7px;margin-top:10px; overflow:hidden}
+.post-footer p{ float:left; }
+.comment-by,
+.comment-user, .comment-time{ float:left; position:relative; margin-right:20px; font-size:80%; text-transform:uppercase}
+.comment-time small{ font-size:100%}
+.comment-count,
+.comment-post-link{font-size:80%; text-transform:uppercase}
+..comment-by .time-stamp{font-size:100%;}
+.fb_comments_count,
+.comment-by,
+.comment-count,
+.comment-user,
+.comment-time{ float:left; position:relative; padding-left:25px; padding-top:3px}
+.comment-post-link{ padding-top:3px; float:left; margin-left:2px}
+.fb_comments_count:before,
+.comment-by:before,
+.comment-count:before,
+.comment-user:before,
+.comment-time:before{ background:url(../../images/icons.png) -411px -282px no-repeat; position:absolute; top:0; left:0; content:""; width:20px; height:20px;}
+
+.comment-by:before{ background-position:-445px -284px}
+.comment-time:before{ background-position:-475px -282px}
+.fb_comments_count:before,
+.comment-count:before{ background-position:-507px -282px}
+
+/*post detail*/
+.em_post-action-top{position:relative}
+.em_post-action-top .prev-button{position:absolute;top:5px;right:28px}
+.em_post-action-top .next-button{position:absolute;top:5px;right:5px}
+.blog-index-view small.date{display:block;font-size:10px;font-style:italic}
+.em_post-item .post-title {padding:7px 20px}
+.blog-post-view .em_post-item .post-title{ padding-right:60px}
+.form-comment-container,
+#comments-header{ border-top:1px solid #d1d1d1}
+.blog_submit button.button,
+.form-comment-container button.button{ margin-top:10px}
+.form-comment-container h3:before,
+.article-comments .form-title:before{width:100%; height:1px; position:absolute; top:-1px;border-top: 1px dashed #000;z-index: 1; left:0; content:""}
+.form-comment-container h3,
+.article-comments .form-title{text-transform:uppercase ; padding-top:15px; margin-bottom:15px; position:relative; float:left;}
+.article-comments .toolbar .pager .pages{ display:inline; margin-top:0; float:right; margin-right:30px}
+#allcomments{ clear:both}
+#allcomments > .comment-item{ padding:20px}
+.blog-index-view .page-title {border:none;margin-bottom:7px}
+.em_post-item .post-content {height:100%;overflow:hidden; padding:5px 20px 20px}
+.em_post-item .post-content img{float:left;margin-right:15px;margin-bottom:5px}
+.em_post-item .post-content p{}
+.em_post-item .post-content .post-footer{ border-top:1px dashed; padding:14px 0 11px; margin-top:26px}
+.em_post-item .post-content .tags{ border-top:1px dashed; padding:17px 0 10px; margin:0}
+.em_post-item .post-content .post-share{ border-top:1px dashed; padding-top:20px; margin-bottom:20px}
+.em_post-action{height:100%;clear:both;margin:0; overflow:hidden;}
+.em_post-action .tags ul{ overflow:hidden}
+.em_post-action .tags span,
+.em_post-action .tags li a{float:left;margin-right:20px; text-transform:capitalize; font-size:110%}
+.em_post-action .tags span{font-weight:bold}
+.em_post-action .post-share{}
+.em_post-action .post-share img{height:16px;width:16px;margin-right:5px;float:left}
+.em_post-action .post-share span{float:left;margin-right:5px;font-weight: bold;}
+.temp  h3.form-title{font-weight:bold;text-transform:uppercase; padding-bottom:8px}
+.form-comment-container h3,.temp  h3.form-title{}
+.temp  h3.form-title{position:absolute;top:15px;left:0;width:100%}
+.form-comment-container{ height: 100%;
+    /*overflow: hidden;
+    padding-top: 20px;*/}
+#0_comment_box{line-height:normal}
+.form-comment{padding:0px 20px 20px;position:relative; clear:both; display:inline-block; width:100%}
+.comments .field{/*float:left;width:312px;margin-right:10px*/}
+.comments div.input-box{width:95%; clear:left;}
+.comments div.input-box .input-text{width:70%!important; clear:left; display:block}
+#recaptcha_widget_div{/*position:absolute;top:99px;left:320px;*top:101px*/margin-top:12px;}
+.form-comment-container #recaptcha_widget_div{}
+.comments .required-1  {/*left: 572px;position: absolute;top: 238px*/; }
+.comments  .required-1  {padding:10px 0; display:inline-block;color:#ff0707 ;font-style:italic; font-weight:500}
+.form-comment-container .hide{display:none}
+.comments .required{ padding:16px 0px 2px; display:inline-block; text-transform:uppercase }
+.comments .required em{}
+.form-comment button{/*position:absolute;bottom:0; left:0*/}
+.comments .temp{padding-top: 45px;}
+.form-comment-container .temp{padding-top: 0!important;}
+.comment-item-header{ position: relative;padding:1px 0 0; display:inline-block; text-transform:uppercase; float:left}
+.comment-item-header .date{ position: relative;padding:4px 0 0; text-transform:uppercase; display:inline-block; float:left; margin-right:20px}
+.comment-button{ float:left; margin-top:4px}
+/*.comment-button{ position: absolute;right: 0;top: 4px;}*/
+.comment-body{padding:9px 0 7px; clear:both; font-size:110%}
+.comment-body pre{white-space: normal;font-size:11px;}
+/*.comment-item-header .time-stamp{display:inline;margin-left:7px}
+.comment-item-header .time-stamp:before{content:"|"; margin-right:7px;}*/
+.comments .post-footer{ padding-bottom:20px}
+#allcomments .comment-item{margin-bottom: 10px;padding-top: 10px; display:inline-block; width:100%}
+#allcomments .level1 .comment-item{ margin-left:15px}
+#allcomments .comment-button button.button{ background:none !important; border:none !important; font-size:80%; font-weight:500}
+#allcomments .comment-button button.button span span{ padding:0}
+
+
+.article-comments .toolbar{ padding:12px 0 13px}
+.article-comments .toolbar .pager{ margin:0}
+.article-comments .toolbar .pager .amount{ display:block; margin-top:8px; margin-bottom:7px}
+.article-comments{margin-top:0px}
+.col3-layout .form-comment-container #recaptcha_widget_div{left: 0;position: relative;top: 5px;}
+.col3-layout .comments .form-comment-container .required-1{left: 0;position: relative;top: 5px;}
+.rss-em-blog {float:right;margin-top: -20px;*margin-top: -22px;}
+
+.comments #loading{height:auto;width:auto;position:static;padding:20px;}
+.blog-tag-view .toolbar,
+.blog-category-view .toolbar,
+.blog-index-index .toolbar{ margin-top:0px}
+.blog-tag-view .toolbar .sorter,
+.blog-category-view .toolbar .sorter,
+.blog-index-index .toolbar .sorter{ float:right}
+.rss-em-blog{margin:7px 0 0 10px;float:left;}
+.blog-tag-view .toolbar .pager .amount,
+.blog-category-view .toolbar .pager .amount,
+.blog-index-index .toolbar .pager .amount{ display:block; margin-top:3px; margin-right:10px; display:none}
+.blog-tag-view .toolbar .pager .pages,
+.blog-tag-view .toolbar .pager .pages,
+.blog-category-view .toolbar .pager .pages,
+.blog-index-index .toolbar .pager .pages{ display:inline-block; margin:0}
+.blog-tag-view .toolbar .pager,
+.blog-category-view .toolbar .pager,
+.blog-index-index .toolbar .pager{ float:left; margin:0 0 0 20px}
+
+.form-comment-container .fb-comments{ clear:both; float:left}
+.fb_comments_count{ float:left; padding-top:2px; font-size:90%}
+@media (max-width: 580px){
+	/*blog*/
+	.em_post-items .em_post-item .post-title{ padding:17px 0 5px; clear:both }
+	.em_post-item .std img{ margin-right:0; width:100%}
+}

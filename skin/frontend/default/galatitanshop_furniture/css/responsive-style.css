@@ -1,0 +1,15 @@
+@media (min-width: 768px){
+
+	.em_nav li:hover > a.arrow { background-image: url(../images/icon-nav-hover-1.png);}
+	.em_nav .nav-right li:hover > a.arrow { background-image: url(../images/icon-nav-right-hover-1.png);}
+
+}
+/* Mobile view */
+@media (max-width:767px) {
+	
+	.em_nav li:hover > a.arrow { background-image: url(../images/m-icon-nav-hover-1.png)}
+	.menu-item-depth-0 > .em-catalog-navigation > li.parent:hover > a.arrow,
+	.menu-item-depth-0.menu-item-parent:hover > a.arrow{
+		background-image: url(../images/m-icon-nav-hover.png);
+	}
+}

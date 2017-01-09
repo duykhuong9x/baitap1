@@ -1,0 +1,39 @@
+<?php if(Mage::getStoreConfig('blog/menu/show_recent_post')):?>
+<?php 
+	$helperBlog = Mage::helper('blog');
+	$thumnailWidth = Mage::getStoreConfig('blog/info/recent_thumbnail_width');
+	$thumnailHeight = Mage::getStoreConfig('blog/info/recent_thumbnail_height');
+?>
+<div class="block em_block-recent-post">
+    <div class="block-title">
+        <strong><span><?php echo $this->__('Recent Posts'); ?></span></strong>
+    </div>
+    <div class="block-content">
+        <ol>
+            <?php foreach ($this->getRecentPost() as $p): ?>
+                <li class="item">
+					<?php if($p->getImage() && Mage::getStoreConfig('blog/info/show_thumbnail_recent_post')):?>
+					<a class="a_recent" href="<?php echo $p->getPostUrl();?>">
+						<img class="img_recent" src="<?php echo $helperBlog->resizeImage($p->getImage(),$thumnailWidth,$thumnailHeight,"emblog/post",'thumbnail');?>"/>
+					</a>
+					<?php endif;?>
+                    <p class="title_recent"><a class="post-title" href="<?php echo $p->getPostUrl(false);?>" ><?php echo $p->getTitle();?></a>
+                    <?php 
+						$shortdes =  $p->getPostIntro();
+						if(strlen($shortdes)>100) { //dem ki tu chuoi $str, 10o la chieu dai muon quy dinh
+							$strCutTitle = substr($shortdes, 0, 100); //cat 100 ki tu dau
+							$shortdes = substr($strCutTitle, 0, strrpos($strCutTitle, ' '));
+						}
+					?><p>
+					<div class="desc"><?php echo $shortdes;?></div>
+                    <div class="post-footer">
+                        <span class="comment-user"><span><?php echo $p->getAuthor()->getUsername()?></span></span>
+                        <?php $date = new DateTime($p->getCreatedAt());?>
+                        <span class="comment-time"><small class="time-stamp"><?php echo $date->format('M j Y'); ?></small></span>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+        </ol>
+    </div>
+</div>
+<?php endif;?>

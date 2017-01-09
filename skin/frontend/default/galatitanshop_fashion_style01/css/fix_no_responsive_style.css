@@ -1,0 +1,4 @@
+.em_nav li:hover > a.arrow { background-image: url(../images/icon-nav-hover-1.png);}
+.em_nav .nav-right li:hover > a.arrow { background-image: url(../images/icon-nav-right-hover-1.png);}
+.cms-index-index .menuleft #menu-default{ position:absolute}
+

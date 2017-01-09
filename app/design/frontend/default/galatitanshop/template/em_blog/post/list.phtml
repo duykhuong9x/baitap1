@@ -1,0 +1,48 @@
+<?php 
+	$posts = $this->getPosts();
+    $tool = $this->getToolbar()->setCollection($posts);
+    $thumnailWidth = Mage::getStoreConfig('blog/info/thumbnail_width');
+    $thumnailHeight = Mage::getStoreConfig('blog/info/thumbnail_height');
+    $helper = Mage::helper('cms');
+	$helperBlog = Mage::helper('blog');
+    $processor = $helper->getBlockTemplateProcessor();
+?>
+<?php if($posts->count() > 0):?>
+<div class="em_post-items">
+	<?php foreach ($posts as $post):?>
+	<div class="em_post-item">
+		<div class="std">
+			<?php if($post->getImage()):?>
+			<a href="<?php echo $post->getPostUrl();?>">
+				<img src="<?php echo $helperBlog->resizeImage($post->getImage(),$thumnailWidth,$thumnailHeight,"emblog/post",'thumbnail');?>"/>
+			</a>
+			 <div class="post-title">
+			<h2><a href="<?php echo $post->getPostUrl(); ?>" ><?php echo $post->getTitle();?></a></h2>		 
+			</div>
+			<?php endif;?>
+            <?php echo $processor->filter($post->getPostIntro());?>
+		</div>
+		
+		<div class="post-footer">
+            <p class="post-by">
+				<span class="comment-user"><span><?php echo $post->getAuthor()->getUsername(); ?></span></span>
+			</p>
+            <?php $date = new DateTime($post->getCreatedAt());?>
+			<p><span class="comment-time"><small class="time-stamp"><?php echo $date->format('M j Y'); ?></small></span></p>
+			<?php if(!Mage::getStoreConfig('blog/comments_facebook/enabled')):?>
+			<span class="comment-count">
+				<?php echo $this->getCommentByPost($post->getId())->count(); ?>
+			</span>
+			<?php else:?>
+			<fb:comments-count href="<?php echo $post->getPostUrl(false)?>"></fb:comments-count>
+			<?php endif;?>
+			<a class="comment-post-link" href="<?php echo $post->getPostUrl(); ?>" ><?php echo $this->__('Comments')?></a>
+		</div>
+	</div>
+	<?php endforeach; ?>
+</div>
+<?php echo $tool->toHtml();?>
+
+<?php else:?>
+<p class="note-msg"><?php echo $this->__('There are no posts matching the selection.')?></p>
+<?php endif;?>

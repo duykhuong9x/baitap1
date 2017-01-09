@@ -1,0 +1,57 @@
+
+<div >
+		  
+		<div class="widget-title">
+			<h3><span>Bán chạy nhất</span></h3>
+		</div>
+		
+		
+			<div class="widget em-widget-bestseller-products-grid">
+			<div class="widget-products">
+														<ul class="products-grid">
+										<li class="item first last"
+						style="  ">
+						<div class="product-item">
+    						    							<a href="http://localhost/galatitanshop-full-package/index.php/sony-xperia-e4-dual.html" title="SONY XPERIA E4 DUAL" class="product-image">
+    								    									<!--show label product - label extension is required-->
+    									<span class="productlabels_icons">
+            <span class="label hot" >
+                        <span>
+                        Hot        </span>
+    </span>
+    </span>    								    
+    								<img src="http://localhost/galatitanshop-full-package/media/catalog/product/cache/12/small_image/149x149/9df78eab33525d08d6e5fb8d27136e95/e/l/electronic-3.jpg" width="149" height="149"  alt="SONY XPERIA E4 DUAL" />
+                                    <span class="bkg-hover"></span>
+                                </a>
+    						    						
+    						<div class="product-shop">
+    							<div class="f-fix">
+    								<!--product name-->
+    								    									<h3 class="product-name"><a href="http://localhost/galatitanshop-full-package/index.php/sony-xperia-e4-dual.html" title="SONY XPERIA E4 DUAL">SONY XPERIA E4 DUAL</a></h3>
+    								    								
+    								<!--product reviews-->
+    								    									    								    								
+    								<!--product description-->
+    								    								
+    								<!--product price-->
+    								    																					
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-166-widget-new-list">
+                                            <span class="price">3.290.000 ₫</span>                                    </span>
+                        
+        </div>
+
+											    								                                    
+                                        							</div>
+    						</div>
+                        </div>
+					</li>
+										</ul>
+																		</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	decorateGeneric($$('ul.products-grid'),['last','first','odd','even']);
+</script>
